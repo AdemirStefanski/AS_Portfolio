@@ -8,13 +8,13 @@ import ProjectImg2 from "@/assets/projects/project_screens/projectPokemonMonitor
 
 //Importing the stack icons. 
 import HTML5IconColor from "@/assets/icons/color/html5.png";
-import CSSColor from "@/assets/icons/color/css3.png";
-import JSColor from "@/assets/icons/color/javascript.png";
+//import CSSColor from "@/assets/icons/color/css3.png";
+//import JSColor from "@/assets/icons/color/javascript.png";
 import ReactColor from "@/assets/icons/color/react.png";
 import TSColor from "@/assets/icons/color/Typescript.png";
-import TailwindColor from "@/assets/icons/color/tailwindcss.png";
-import AxiosColor from "@/assets/icons/color/axios.png";
-import NextColor from "@/assets/icons/color/nextjs.png";
+//import TailwindColor from "@/assets/icons/color/tailwindcss.png";
+//import AxiosColor from "@/assets/icons/color/axios.png";
+//import NextColor from "@/assets/icons/color/nextjs.png";
 
 
 
