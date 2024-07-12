@@ -24,7 +24,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   // Hook para verificar se a tela é maior que 900px
   const isAboveMediumScreens = useMediaQuery("(min-width: 900px)");
   // Determina a classe de background do navbar baseado na posição da página
-  const navbarBackground = isTopOfPage ? "" : "bg-my-colors-green drop-shadow";
+  const navbarBackground = isTopOfPage ? "" : "bg-my-colors-green drop-shadow bg-opacity-80 backdrop-blur";
   // Ref para o contêiner do menu
   const menuRef = useRef<HTMLDivElement>(null);
 
