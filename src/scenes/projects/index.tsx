@@ -3,8 +3,12 @@ import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion";
 
 //PROJECT POKEMON PRINT/LOGO IMPORT
-import ProjectPokemonImg from "@/assets/projects/project_screens/siteprint001.jpg";
+import ProjectPokemonImg from "@/assets/projects/project_screens/sitePrintPokéHouse.jpg";
 import ProjectPokemonLogo from "@/assets/projects/logos/PokeHouseLogo.png";
+
+//PROJECT THE BATMAN PRINT/LOGO IMPORT
+import ProjectTheBatmanImg from "@/assets/projects/project_screens/sitePrintBatman.jpg";
+import ProjectTheBatmanLogo from "@/assets/projects/logos/TheBatmanLogo.png";
 
 
 //Importing the stack icons. 
@@ -59,10 +63,10 @@ const Projects = ({ setSelectedPage }: Props) => {
          
           <div className=" h-full w-full  flex flex-row justify-items-center z-10 pt-4">
 
-            {/* project card background */}
+            {/* project card background PokéHouse */}
             <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
               {/* card blue border */}
-              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-4 flex flex-col gap-3 justify-between">
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
                 {/* project logo */}
                 <div className="flex justify-center items-center">
                   <img src={ProjectPokemonLogo} alt="PokéHouse" title="PokéHouse" className=" w-2/4	" />
@@ -71,12 +75,12 @@ const Projects = ({ setSelectedPage }: Props) => {
                 <div className="flex justify-center items-center">
                 <motion.img
                     whileHover={{ scale: 1.1 }}          
-                    src={ProjectPokemonImg} alt="PokéHouse Demo" title="PokéHouse Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] opacity-80" 
+                    src={ProjectPokemonImg} alt="PokéHouse Demo" title="PokéHouse Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]" 
                   />
                 </div>
                 {/* project description */}
                 <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg">
-                  <p className="text-center m-1 text-text-color-blue text-15px p-2">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
                   PokéHouse project was developed to query an API and display comprehensive information about all Pokémon on a website. Clicking on a Pokémon opens an overscreen displaying its name and details.
                   </p>
                 </div>
@@ -86,15 +90,15 @@ const Projects = ({ setSelectedPage }: Props) => {
                   <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min">
                     {/* HTML5 ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={HTML5IconColor} alt="HTML5 Icon" />
+                      <img src={HTML5IconColor} alt="HTML5 Icon" title="HTML5" />
                     </div>
                     {/* CSS3 ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={CSSColor} alt="CSS3 Icon" />
+                      <img src={CSSColor} alt="CSS3 Icon" title="CSS3" />
                     </div>
                     {/* JAVASCRIPT ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={JSColor} alt="JavaScript Icon" />
+                      <img src={JSColor} alt="JavaScript Icon" title="JavaScript" />
                     </div>
                   </div>
                 </div>
@@ -109,7 +113,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                           transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         />
                       </a>
-                      <p className="text-text-color-blue">Demo</p>
+                      <p className="text-text-color-blue font-bold">Demo</p>
                     </div>
                     
                   </div>
@@ -117,12 +121,12 @@ const Projects = ({ setSelectedPage }: Props) => {
                     {/* project demonstration link  */}
                     <div className="flex justify-center items-center">
                         <a href="" target="_blank" rel="noopener noreferrer">
-                          <motion.div className="w-7 h-7 object-contain content-demonograytwo hover:content-democolor pr-2"
+                          <motion.div className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
                             whileHover={{ scale: 1.1 }}
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                           />
                         </a>
-                        <p>Code</p>
+                        <p className="text-text-color-blue font-bold">Code</p>
                       </div>
                   </div>
 
@@ -130,6 +134,77 @@ const Projects = ({ setSelectedPage }: Props) => {
               </div>
             </div>
             
+            {/* project card background The Batman */}
+            <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
+              {/* card blue border */}
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
+                {/* project logo */}
+                <div className="flex justify-center items-center">
+                  <img src={ProjectTheBatmanLogo} alt="PokéHouse" title="PokéHouse" className=" w-2/4	" />
+                </div>
+                {/* project print */}
+                <div className="flex justify-center items-center">
+                <motion.img
+                    whileHover={{ scale: 1.1 }}          
+                    src={ProjectTheBatmanImg} alt="PokéHouse Demo" title="PokéHouse Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]" 
+                  />
+                </div>
+                {/* project description */}
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
+                  Promotional project for 'The Batman' movie, featuring exclusive content from the main actors, the official trailer, and a contact page for fans.
+                  </p>
+                </div>
+                {/* div to horizontally align the stack div */}
+                <div className="flex justify-center items-center">
+                  {/* project stacks */}
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min">
+                    {/* HTML5 ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={HTML5IconColor} alt="HTML5 Icon" title="HTML5" />
+                    </div>
+                    {/* CSS3 ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={CSSColor} alt="CSS3 Icon" title="CSS3" />
+                    </div>
+                    {/* JAVASCRIPT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={JSColor} alt="JavaScript Icon" title="JavaScript" />
+                    </div>
+                  </div>
+                </div>
+                {/* extern links (github and demo) */}
+                <div className="flex justify-center items-center gap-4">
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                      </a>
+                      <p className="text-text-color-blue font-bold">Demo</p>
+                    </div>
+                    
+                  </div>
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project demonstration link  */}
+                    <div className="flex justify-center items-center">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <motion.div className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                          />
+                        </a>
+                        <p className="text-text-color-blue font-bold">Code</p>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>  
       </motion.div>

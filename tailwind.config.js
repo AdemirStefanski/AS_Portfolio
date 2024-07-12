@@ -2,9 +2,6 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontSize: {
-      '15px': '15px',
-    },
     maxHeight: {
       '372': '300px',
     },
@@ -60,8 +57,10 @@ module.exports = {
         githubcolor: "url('./assets/icons/color/gitHubLogo_color.png')",
         democolor: "url('./assets/icons/color/exportarColor.png')",
         demonocolor: "url('./assets/icons/baw/exportarPB.png')",
-        demonograyone: "url('./assets/icons/baw/exportarGray.png')",
-        demonograytwo: "url('./assets/icons/baw/exportarGraySecond.png')",
+        demonograythird: "url('./assets/icons/baw/exportarGrayThird.png')",
+
+
+        
         
         
         
