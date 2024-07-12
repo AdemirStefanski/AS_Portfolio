@@ -2,17 +2,23 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontSize: {
+      '15px': '15px',
+    },
     maxHeight: {
       '372': '300px',
     },
     extend: {
       height: {
         '350': '350px',
+        '550': '550px',
+        '600': '600px',
       },
       width: {
+        '300': '300px',
         '360': '360px',
-        '363': '363px',
         '350': '350px',
+        '363': '363px',
       },
       colors: {
         "gray-20": "#F8F4EB",
@@ -30,15 +36,14 @@ module.exports = {
         "my-colors-green-10": "#13678b", //mobile menu color.
         "my-colors-menu-selected": "#3ca6a6", //menu item selcted.
         "my-colors-menu-hover": "#149a9b", //menu item hover.
+        "my-colors-card-border": "#002333", //card border
 
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":
           "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
         "mobile-home": "url('./assets/HomePageGraphic.png')",
-        "card-background": "url('./assets/projects/backgrounds/cardBackground_001.png')",
-        "card-background88": "url('./assets/projects/backgrounds/cardBackground_opacity88.png')",
-         
+        "cardAbsBg": "url('./assets/projects/backgrounds/cardAbstract.png')", 
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
@@ -53,16 +58,13 @@ module.exports = {
         linkedincolor: "url('./assets/icons/color/linkedInLogo_color.png')",
         githubnocolor: "url('./assets/icons/baw/gitHubLogo_no_color.png')",
         githubcolor: "url('./assets/icons/color/gitHubLogo_color.png')",
-        livecolor: "url('./assets/icons/color/liveProjectColor.png')",
-        livenocolor: "url('./assets/icons/baw/liveProjectPB.png')",
-        stackcolor: "url('./assets/icons/color/stackColor.png')",
-        stacknocolor: "url('./assets/icons/baw/stackPB.png')",
-        projectpage001: "url('./assets/projects/backgrounds/projectsBase001.png')",
-        projectpage002: "url('./assets/projects/backgrounds/projectsBase002.png')",
-        projectpage003: "url('./assets/projects/backgrounds/projectsBase003.png')",
-        projectpage004: "url('./assets/projects/backgrounds/projectsBase004.png')",
-        projectpage005: "url('./assets/projects/backgrounds/projectsBase005.png')",
-        projectpage006: "url('./assets/projects/backgrounds/cardBackground_001.png')",
+        democolor: "url('./assets/icons/color/exportarColor.png')",
+        demonocolor: "url('./assets/icons/baw/exportarPB.png')",
+        demonograyone: "url('./assets/icons/baw/exportarGray.png')",
+        demonograytwo: "url('./assets/icons/baw/exportarGraySecond.png')",
+        
+        
+        
 
        
       },

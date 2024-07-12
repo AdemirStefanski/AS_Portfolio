@@ -1,18 +1,18 @@
 import TextTitles from "@/shared/TextTitles";
 import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion";
-import { useState } from "react";
 
-
-import ProjectImg from "@/assets/projects/project_screens/siteprint001.jpg";
+//PROJECT POKEMON PRINT/LOGO IMPORT
+import ProjectPokemonImg from "@/assets/projects/project_screens/siteprint001.jpg";
+import ProjectPokemonLogo from "@/assets/projects/logos/PokeHouseLogo.png";
 
 
 //Importing the stack icons. 
 import HTML5IconColor from "@/assets/icons/color/html5.png";
-//import CSSColor from "@/assets/icons/color/css3.png";
-//import JSColor from "@/assets/icons/color/javascript.png";
-import ReactColor from "@/assets/icons/color/react.png";
-import TSColor from "@/assets/icons/color/Typescript.png";
+import CSSColor from "@/assets/icons/color/css3.png";
+import JSColor from "@/assets/icons/color/javascript.png";
+//import ReactColor from "@/assets/icons/color/react.png";
+//import TSColor from "@/assets/icons/color/Typescript.png";
 //import TailwindColor from "@/assets/icons/color/tailwindcss.png";
 //import AxiosColor from "@/assets/icons/color/axios.png";
 //import NextColor from "@/assets/icons/color/nextjs.png";
@@ -25,12 +25,12 @@ type Props = {
 
 const Projects = ({ setSelectedPage }: Props) => {
 
-  const [isOpen, setIsOpen] = useState(false);
+//  const [isOpen, setIsOpen] = useState(false);
 
-  // Função para alternar o estado da div ao clicar no botão
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
+// Função para alternar o estado da div ao clicar no botão
+// const toggleOpen = () => {
+//   setIsOpen(!isOpen);
+//  };
 
     
   return (
@@ -57,141 +57,82 @@ const Projects = ({ setSelectedPage }: Props) => {
           </motion.div>
 
          
-          <div className=" h-auto  flex flex-row justify-items-center z-10 pt-4">
-            <div className="">
-              <div className="rounded-lg mb-2 bg-card-background88 h-350 w-363 2-auto pt-4 bg-contain bg-no-repeat m-2 flex flex-col justify-between">
-                <div className="flex flex-row justify-center items-center">
-                  <motion.img
-                    whileHover={{ scale: 1.1 }}
-                                   
-                    
-                    src={ProjectImg} alt="" className="rounded-lg w-3/5 drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] opacity-80" 
+          <div className=" h-full w-full  flex flex-row justify-items-center z-10 pt-4">
+
+            {/* project card background */}
+            <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
+              {/* card blue border */}
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-4 flex flex-col gap-3 justify-between">
+                {/* project logo */}
+                <div className="flex justify-center items-center">
+                  <img src={ProjectPokemonLogo} alt="PokéHouse" title="PokéHouse" className=" w-2/4	" />
+                </div>
+                {/* project print */}
+                <div className="flex justify-center items-center">
+                <motion.img
+                    whileHover={{ scale: 1.1 }}          
+                    src={ProjectPokemonImg} alt="PokéHouse Demo" title="PokéHouse Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] opacity-80" 
                   />
                 </div>
-                <div className="flex flex-row justify-center items-center py-2 pt-2  ">
-                  <div className="w-3/5 bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg ">
-                    <p className="text-center m-1 text-xs font-semibold">
-                      YouTube clone using modern technologies, featuring complete functionalities such as API integration for video queries, an efficient search system, and a responsive and intuitive user interface.
-                    </p>
+                {/* project description */}
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg">
+                  <p className="text-center m-1 text-text-color-blue text-15px p-2">
+                  PokéHouse project was developed to query an API and display comprehensive information about all Pokémon on a website. Clicking on a Pokémon opens an overscreen displaying its name and details.
+                  </p>
+                </div>
+                {/* div to horizontally align the stack div */}
+                <div className="flex justify-center items-center">
+                  {/* project stacks */}
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min">
+                    {/* HTML5 ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={HTML5IconColor} alt="HTML5 Icon" />
+                    </div>
+                    {/* CSS3 ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={CSSColor} alt="CSS3 Icon" />
+                    </div>
+                    {/* JAVASCRIPT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={JSColor} alt="JavaScript Icon" />
+                    </div>
                   </div>
                 </div>
-                <div>
-                <motion.div className="flex gap-4 pb-4 justify-center"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{once: true, amount: 0.5}}
-                  transition={{delay: 0.1, duration: 0.5}}
-                  variants={{
-                    hidden: {opacity: 0, x:-30},
-                    visible: {opacity:1, x:0},
-                  }}
-                >
-                  <a href="" target="_blank" rel="noopener noreferrer">
-                    <motion.div className="w-8 h-8 object-contain content-livenocolor hover:content-livecolor"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                      //whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
-                      //whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
-                    />
-                  </a>
-
-                  <a href="" target="_blank" rel="noopener noreferrer">
-                    <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                      //whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
-                      //whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
-                    />
-                  </a>
-
-                  <div>
-                    <motion.div className="w-8 h-8 object-contain content-stacknocolor hover:content-stackcolor cursor-pointer"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                      //whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
-                      //whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
-                      onClick={toggleOpen}
-                    />
-                      <motion.div
-                      initial={{ opacity: 0, y: -50 }}
-                      animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -50 }}
-                      transition={{ duration: 0.5 }}
-                      className={`absolute bg-white w-auto p-4 mt-2 rounded-lg shadow-md ${isOpen ? 'block' : 'hidden'}`}
-                      >
-                        <div className="flex justify-start space-x-4 ">
-                          <motion.div 
-                            animate={{
-                              scale: [1, 1.2, 1.2, 1, 1],
-                              rotate: [0, 0, 180, 180, 0],
-                              borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-                            }}
-                            transition={{
-                              duration: 2,
-                              ease: "easeInOut",
-                              times: [0, 0.2, 0.5, 0.8, 1],
-                              repeat: Infinity,
-                              repeatDelay: 1
-                            }}
-                            className="w-6 h-6 flex justify-center items-center"
-                          >
-                            <img src={HTML5IconColor} alt="" />
-                          </motion.div>
-                          <motion.div 
-                            animate={{
-                              scale: [1, 1.2, 1.2, 1, 1],
-                              rotate: [0, 0, 180, 180, 0],
-                              borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-                            }}
-                            transition={{
-                              duration: 2,
-                              ease: "easeInOut",
-                              times: [0, 0.2, 0.5, 0.8, 1],
-                              repeat: Infinity,
-                              repeatDelay: 1
-                            }}
-                            className="w-6 h-6 flex justify-center items-center"
-                          >
-                            <img src={TSColor} alt="" />
-                          </motion.div>
-                          <motion.div 
-                            animate={{
-                              scale: [1, 1.2, 1.2, 1, 1],
-                              rotate: [0, 0, 180, 180, 0],
-                              borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-                            }}
-                            transition={{
-                              duration: 2,
-                              ease: "easeInOut",
-                              times: [0, 0.2, 0.5, 0.8, 1],
-                              repeat: Infinity,
-                              repeatDelay: 1
-                            }}
-                            className="w-6 h-6 flex justify-center items-center"
-                          >
-                            <img src={ReactColor} alt="" />
-                          </motion.div>
-                        </div>
-                      </motion.div>
+                {/* extern links (github and demo) */}
+                <div className="flex justify-center items-center gap-4">
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                      </a>
+                      <p className="text-text-color-blue">Demo</p>
+                    </div>
                     
                   </div>
-                  
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project demonstration link  */}
+                    <div className="flex justify-center items-center">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <motion.div className="w-7 h-7 object-contain content-demonograytwo hover:content-democolor pr-2"
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                          />
+                        </a>
+                        <p>Code</p>
+                      </div>
+                  </div>
 
-                </motion.div>
                 </div>
               </div>
-
-              
-
             </div>
-
             
-
           </div>
-          
         </div>  
       </motion.div>
-
-      
     </section>
   )
 }

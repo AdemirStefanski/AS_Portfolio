@@ -213,7 +213,7 @@ function About({ setSelectedPage }: Props) {
                 </div>
                 {isSmallScreen && !isExpanded && (
                   <button
-                    className="mt-2 text-blue-500 text-sm absolute bottom-2 right-2"
+                    className="mt-2 text-text-color-blue text-sm absolute bottom-2 right-2"
                     style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
                     onClick={handleToggle}
                   >
