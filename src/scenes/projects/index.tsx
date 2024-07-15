@@ -68,26 +68,26 @@ const Projects = ({ setSelectedPage }: Props) => {
               {/* card blue border */}
               <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
                 {/* project logo */}
-                <div className="flex justify-center items-center">
-                  <img src={ProjectPokemonLogo} alt="PokéHouse" title="PokéHouse" className=" w-2/4	" />
+                <div className="flex justify-center items-center h-6-6667">
+                  <img src={ProjectPokemonLogo} alt="PokéHouse" title="PokéHouse" className="object-contain h-full w-full" />
                 </div>
                 {/* project print */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center h-26-6667">
                 <motion.img
                     whileHover={{ scale: 1.1 }}          
-                    src={ProjectPokemonImg} alt="PokéHouse Demo" title="PokéHouse Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]" 
+                    src={ProjectPokemonImg} alt="PokéHouse Demo" title="PokéHouse Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
                   />
                 </div>
                 {/* project description */}
-                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg">
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29">
                   <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
-                  PokéHouse project was developed to query an API and display comprehensive information about all Pokémon on a website. Clicking on a Pokémon opens an overscreen displaying its name and details.
+                  Project developed to query an API and display comprehensive information about all characters. Clicking on a Pokémon opens an overlay displaying its name and details.
                   </p>
                 </div>
                 {/* div to horizontally align the stack div */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center h-9">
                   {/* project stacks */}
-                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min">
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
                     {/* HTML5 ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
                       <img src={HTML5IconColor} alt="HTML5 Icon" title="HTML5" />
@@ -103,7 +103,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                   </div>
                 </div>
                 {/* extern links (github and demo) */}
-                <div className="flex justify-center items-center gap-4">
+                <div className="flex justify-center items-center gap-4  h-8-3333">
                   <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
                     {/* project github code link */}
                     <div className="flex justify-center items-center">
@@ -137,26 +137,26 @@ const Projects = ({ setSelectedPage }: Props) => {
             {/* project card background The Batman */}
             <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
               {/* card blue border */}
-              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between ">
                 {/* project logo */}
-                <div className="flex justify-center items-center">
-                  <img src={ProjectTheBatmanLogo} alt="PokéHouse" title="PokéHouse" className=" w-2/4	" />
+                <div className="relative flex justify-center items-center h-6-6667 ">
+                  <img src={ProjectTheBatmanLogo} alt="Batman" title="Batman" className="object-contain h-full w-full" />
                 </div>
                 {/* project print */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center h-26-6667">
                 <motion.img
                     whileHover={{ scale: 1.1 }}          
-                    src={ProjectTheBatmanImg} alt="PokéHouse Demo" title="PokéHouse Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]" 
+                    src={ProjectTheBatmanImg} alt="Batman Demo" title="Batman Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]" 
                   />
                 </div>
                 {/* project description */}
-                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg">
-                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold ">
                   Promotional project for 'The Batman' movie, featuring exclusive content from the main actors, the official trailer, and a contact page for fans.
                   </p>
                 </div>
                 {/* div to horizontally align the stack div */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center h-9">
                   {/* project stacks */}
                   <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min">
                     {/* HTML5 ICON */}
@@ -167,14 +167,11 @@ const Projects = ({ setSelectedPage }: Props) => {
                     <div className="w-5 h-5 flex justify-center items-center">
                       <img src={CSSColor} alt="CSS3 Icon" title="CSS3" />
                     </div>
-                    {/* JAVASCRIPT ICON */}
-                    <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={JSColor} alt="JavaScript Icon" title="JavaScript" />
-                    </div>
+                    
                   </div>
                 </div>
                 {/* extern links (github and demo) */}
-                <div className="flex justify-center items-center gap-4">
+                <div className="flex justify-center items-center gap-4 h-8-3333">
                   <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
                     {/* project github code link */}
                     <div className="flex justify-center items-center">
