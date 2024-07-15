@@ -5,6 +5,7 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import About from "@/scenes/about"
 import Projects from "./scenes/projects";
+import Certifications from "./scenes/certifications";
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <About setSelectedPage={setSelectedPage} />
       <Projects setSelectedPage={setSelectedPage} />
+      <Certifications setSelectedPage={setSelectedPage} />
      
     </div>
   )
