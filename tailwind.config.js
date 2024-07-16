@@ -40,7 +40,7 @@ module.exports = {
         "my-colors-menu-selected": "#3ca6a6", //menu item selcted.
         "my-colors-menu-hover": "#149a9b", //menu item hover.
         "my-colors-card-border": "#002333", //card border
-
+        "my-colors-hover-card": "#52c3ff", //demo and card hover color
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":

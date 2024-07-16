@@ -9,6 +9,10 @@ type Props = {
 }
 
 const Certifications = ({ setSelectedPage }: Props) => {
+
+  
+
+
   return (
     <section id="certifications" className="w-full py-40 bg-white">
       <motion.div

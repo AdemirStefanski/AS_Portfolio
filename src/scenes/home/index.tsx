@@ -178,7 +178,7 @@ const Home = ({ setSelectedPage }: Props) => {
               <img
                   src={loaded ? CSSPB : CSSColor }
                   alt="CSS 3" title="CSS 3"
-                  className={`max-w-full max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+                  className={`max-w-full h-10 max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out object-cover`}
               />            
               </div>
 
