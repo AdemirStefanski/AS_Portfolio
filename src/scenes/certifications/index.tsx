@@ -1,6 +1,9 @@
 import TextTitles from "@/shared/TextTitles";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import ModalComponent from "./modalComponent"
+
 
 import CertificateIcon from "@/assets/icons/color/certificate.png";
 
@@ -10,7 +13,15 @@ type Props = {
 
 const Certifications = ({ setSelectedPage }: Props) => {
 
-  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };  
 
 
   return (
@@ -32,10 +43,11 @@ const Certifications = ({ setSelectedPage }: Props) => {
           <div className="md:w-3/5">
             <TextTitles>Certifications</TextTitles>
           </div>
-          <p className="py-5">
+          <p className="py-5" >
             Explore my certifications that demonstrate my dedication and proficiency in various essential front-end development technologies and tools.
           </p>
         </motion.div>
+        
       </motion.div>
       
       <motion.div className="flex flex-wrap justify-center items-center gap-1 p-4 h-screen">
@@ -47,12 +59,12 @@ const Certifications = ({ setSelectedPage }: Props) => {
             />
           </div>
           <div>
-            <p className="font-semibold pl-2">
+            <p className="font-semibold pl-2 cursor-pointer" onClick={handleOpenModal}>
             Full-Stack Software Development and Software Architecture
             </p>
           </div>
         </motion.div>
-
+        {isModalOpen && <ModalComponent onClose={handleCloseModal} />}
       </motion.div>
 
     </section>
