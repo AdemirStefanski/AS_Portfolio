@@ -16,3 +16,11 @@ export interface ClassType {
   description?: string;
   image: string;
 }
+
+export interface Course {
+  id: number;
+  title: string;
+  duration: string;
+  syllabus: string[];
+  imageUrl: string;
+}
