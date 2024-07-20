@@ -57,7 +57,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           {/* Contêiner interno do cabeçalho */}
           <div className={`${flexBetween} w-full gap-16`}>
             {/* Lado esquerdo */}
-            <img alt="logo" src={Logo2} />
+            <img alt="logo" src={Logo2} className="h-10  object-contain"/>
 
             {/* Lado direito */}
             {isAboveMediumScreens ? (

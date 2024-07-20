@@ -107,26 +107,41 @@ const Certifications = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md:w-3/5 flex justify-center items-center h-20 text-center">
+          <motion.div
+            className="md:w-3/5 flex justify-center items-center h-20 text-center"
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.5 }}
+          >
             <TextTitles>Certifications</TextTitles>
-          </div>
-          <p className="py-5 text-center">
+          </motion.div>
+          <motion.p
+            className="pb-4 text-center w-9/12 font-semibold"
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             Explore my certifications that demonstrate my dedication and proficiency in various essential front-end development technologies and tools.
-          </p>
+          </motion.p>
         </motion.div>
+
       </motion.div>
 
       {/* Lista de cursos */}
       <motion.div className="flex flex-col items-center w-full">
-        <motion.div className="flex flex-wrap justify-center w-9/12">
+        <motion.div className="grid grid-cols-3 gap-4 justify-around w-9/12 bg-primary-50 rounded-lg p-3">
           {courses.map((course) => (
             <div key={course.id} className="flex items-center justify-center m-2 max-w-64">
               <div className="w-8 min-w-8">
                 <img
                   src={CertificateIcon}
                   alt=""
-                  className="w-8 h-8 object-contain min-w-[22px]"
-                  onMouseEnter={() => console.log("onMouseEnter")}
+                  className="w-8 h-8 object-contain min-w-[22px] cursor-pointer"
+                  onClick={() => handleOpenModal(course)}
                 />
               </div>
               <div>

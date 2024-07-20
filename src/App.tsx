@@ -4,9 +4,9 @@ import { SelectedPage } from "@/shared/types";
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import About from "@/scenes/about"
-import Projects from "./scenes/projects";
-import Certifications from "./scenes/certifications";
-
+import Projects from "@/scenes/projects";
+import Certifications from "@/scenes/certifications";
+import Footer from "@/scenes/footer";
 
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
       <About setSelectedPage={setSelectedPage} />
       <Projects setSelectedPage={setSelectedPage} />
       <Certifications setSelectedPage={setSelectedPage} />
-     
+      <Footer />
     </div>
   )
 }
