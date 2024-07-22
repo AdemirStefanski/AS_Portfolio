@@ -92,7 +92,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="certifications" className="w-full md:py-20  flex flex-col items-center">
+    <section id="certifications" className="w-full md:py-20 sm:py-12 py-6 flex flex-col items-center">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Certifications)}
       >
@@ -133,7 +133,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
 
       {/* Lista de cursos */}
       <motion.div className="flex flex-col items-center w-full">
-        <motion.div className="grid grid-cols-3 gap-4 justify-around w-9/12 bg-primary-50 rounded-lg p-3">
+        <motion.div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4 justify-around w-9/12 bg-primary-50 rounded-lg p-3">
           {courses.map((course) => (
             <div key={course.id} className="flex items-center justify-center m-2 max-w-64">
               <div className="w-8 min-w-8">
