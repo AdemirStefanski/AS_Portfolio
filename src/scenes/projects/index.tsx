@@ -22,7 +22,11 @@ import ProjectTheBatmanLogo from "@/assets/projects/logos/TheBatmanLogo.png";
 import HTML5IconColor from "@/assets/icons/color/html5.png";
 import CSSColor from "@/assets/icons/color/css3.png";
 import JSColor from "@/assets/icons/color/javascript.png";
-//import ReactColor from "@/assets/icons/color/react.png";
+import ReactColor from "@/assets/icons/color/react.png";
+import ReduxColor from "@/assets/icons/color/redux.png";
+import GraphSQLColor from "@/assets/icons/color/graphql.png";
+import FirebaseColor from "@/assets/icons/color/firebase.png";
+//import SockedColor from "@/assets/icons/color/socked.png";
 //import TSColor from "@/assets/icons/color/Typescript.png";
 //import TailwindColor from "@/assets/icons/color/tailwindcss.png";
 //import AxiosColor from "@/assets/icons/color/axios.png";
@@ -92,7 +96,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                   </p>
                 </div>
                 {/* div to horizontally align the stack div */}
-                <div className="flex justify-center items-center h-9">
+                <div className="grid justify-center items-center h-9">
                   {/* project stacks */}
                   <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
                     {/* HTML5 ICON */}
@@ -107,6 +111,23 @@ const Projects = ({ setSelectedPage }: Props) => {
                     <div className="w-5 h-5 flex justify-center items-center">
                       <img src={JSColor} alt="JavaScript Icon" title="JavaScript" />
                     </div>
+                    {/* REACT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={ReactColor} alt="React Native" title="React Native" />
+                    </div>
+                    {/* REDUX ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={ReduxColor} alt="Redux" title="Redux" />
+                    </div>
+                    {/* GRAPHSQL ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={GraphSQLColor} alt="GraphSQL" title="GraphSQL" />
+                    </div>
+                    {/* FIREBASE ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={FirebaseColor} alt="Firebase" title="Firebase" />
+                    </div>
+                    
                   </div>
                 </div>
                 {/* extern links (github and demo) */}
@@ -137,7 +158,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                         <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
                           whileHover={{ scale: 1.1 }}
                           transition={{ stiffness: 400, damping: 10 }}
-                        >Demo</motion.p>
+                        >Site</motion.p>
                       </a>
                     </div>
                   </div>

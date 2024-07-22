@@ -21,11 +21,13 @@ const Footer = ( ) => {
           <p className="my-5 text-center md:text-start">
           I hope you enjoyed exploring my projects. If you're interested in discussing opportunities or collaborating, feel free to reach out. I look forward to connecting and contributing!
           </p>
-          <p className="text-center md:text-start">Copyright © 2024. All rights are reserved</p>
+          <p className="text-center md:text-start">© 2024 Ademir Stefanski.</p>
         </div>
         {/* linkedin and github external links */}
         <div className="xsl:mt-4 basis-1/4 md:mt-0 flex flex-col xls:justify-start text-center">
-          <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-4 md:hidden xsl:mb-4"/>
+          <div className="flex flex-row justify-center">
+            <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-4 md:hidden xsl:mb-4 w-3/5"/>
+          </div>
           <h4 className="font-bold w-auto text-center">Links</h4>
           <motion.div className="flex gap-4 xls:justify-start w-auto pt-4 justify-center"
               initial="hidden"
@@ -55,7 +57,9 @@ const Footer = ( ) => {
         </div>
         {/* Contact me links */}
         <div className="xsl:mt-4 basis-1/4 md:mt-0 text-center md:text-start">
-          <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-4 md:hidden"/>
+          <div className="flex flex-row justify-center">
+            <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-4 md:hidden w-3/5"/>  
+          </div>
           <h4 className="font-bold">Contact Me</h4>
           <div className="flex justify-center items-center md:justify-start">
             <img src={Phone} alt="" className=" h-6 pr-1 " />
