@@ -7,6 +7,11 @@ import { motion } from "framer-motion";
 import ReformaFacilImg from "@/assets/projects/project_screens/sitePrintReformaFácil.jpg";
 import ReformaFacilLogo from "@/assets/projects/logos/ReformaFacilLogo.png";
 
+//PROJECT YOUTUBE PRINT/LOGO IMPORT
+import YouTubeImg from "@/assets/projects/project_screens/sitePrintYouTube.jpg";
+import ProjectYouTubeLogo from "@/assets/projects/logos/YouTubeLogo.png";
+
+
 //PROJECT POKEMON PRINT/LOGO IMPORT
 import ProjectPokemonImg from "@/assets/projects/project_screens/sitePrintPokéHouse.jpg";
 import ProjectPokemonLogo from "@/assets/projects/logos/PokeHouseLogo.png";
@@ -14,6 +19,8 @@ import ProjectPokemonLogo from "@/assets/projects/logos/PokeHouseLogo.png";
 //PROJECT THE BATMAN PRINT/LOGO IMPORT
 import ProjectTheBatmanImg from "@/assets/projects/project_screens/sitePrintBatman.jpg";
 import ProjectTheBatmanLogo from "@/assets/projects/logos/TheBatmanLogo.png";
+
+
 
 
 
@@ -26,11 +33,17 @@ import ReactColor from "@/assets/icons/color/react.png";
 import ReduxColor from "@/assets/icons/color/redux.png";
 import GraphSQLColor from "@/assets/icons/color/graphql.png";
 import FirebaseColor from "@/assets/icons/color/firebase.png";
+import TSColor from "@/assets/icons/color/Typescript.png";
+import StyledComponentsColor from "@/assets/icons/color/styledcomponents.png";
+import AxiosColor from "@/assets/icons/color/axios.png";
+import WebpackColor from "@/assets/icons/color/webpack-original.png";
+import RRDColor from "@/assets/icons/color/react-router.png";
+
 //import SockedColor from "@/assets/icons/color/socked.png";
-//import TSColor from "@/assets/icons/color/Typescript.png";
 //import TailwindColor from "@/assets/icons/color/tailwindcss.png";
-//import AxiosColor from "@/assets/icons/color/axios.png";
 //import NextColor from "@/assets/icons/color/nextjs.png";
+
+
 
 
 
@@ -80,13 +93,13 @@ const Projects = ({ setSelectedPage }: Props) => {
               <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
                 {/* project logo */}
                 <div className="flex justify-center items-center h-6-6667">
-                  <img src={ReformaFacilLogo} alt="Reforma Fácil" title="Reforma Fácil" className="object-contain h-full w-full" />
+                  <img src={ReformaFacilLogo} alt="Reforma Fácil Logo" title="Reforma Fácil" className="object-contain h-full w-full" />
                 </div>
                 {/* project print */}
                 <div className="flex justify-center items-center h-26-6667">
                 <motion.img
                     whileHover={{ scale: 1.1 }}          
-                    src={ReformaFacilImg} alt="Reforma Fácil Demo" title="Reforma Fácil Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                    src={ReformaFacilImg} alt="Reforma Fácil Site" title="Reforma Fácil Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
                   />
                 </div>
                 {/* project description */}
@@ -99,10 +112,6 @@ const Projects = ({ setSelectedPage }: Props) => {
                 <div className="grid justify-center items-center h-9">
                   {/* project stacks */}
                   <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
-                    {/* HTML5 ICON */}
-                    <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={HTML5IconColor} alt="HTML5 Icon" title="HTML5" />
-                    </div>
                     {/* CSS3 ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
                       <img src={CSSColor} alt="CSS3 Icon" title="CSS3" />
@@ -113,19 +122,19 @@ const Projects = ({ setSelectedPage }: Props) => {
                     </div>
                     {/* REACT ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={ReactColor} alt="React Native" title="React Native" />
+                      <img src={ReactColor} alt="React Native Icon" title="React Native" />
                     </div>
                     {/* REDUX ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={ReduxColor} alt="Redux" title="Redux" />
+                      <img src={ReduxColor} alt="Redux Icon" title="Redux" />
                     </div>
                     {/* GRAPHSQL ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={GraphSQLColor} alt="GraphSQL" title="GraphSQL" />
+                      <img src={GraphSQLColor} alt="GraphSQL Icon" title="GraphSQL" />
                     </div>
                     {/* FIREBASE ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={FirebaseColor} alt="Firebase" title="Firebase" />
+                      <img src={FirebaseColor} alt="Firebase Icon" title="Firebase" />
                     </div>
                     
                   </div>
@@ -159,6 +168,99 @@ const Projects = ({ setSelectedPage }: Props) => {
                           whileHover={{ scale: 1.1 }}
                           transition={{ stiffness: 400, damping: 10 }}
                         >Site</motion.p>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            {/* project Youtube */}
+            <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
+              {/* card blue border */}
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
+                {/* project logo */}
+                <div className="flex justify-center items-center h-6-6667">
+                  <img src={ProjectYouTubeLogo} alt="YouTube" title="YouTube" className="object-contain h-full w-full" />
+                </div>
+                {/* project print */}
+                <div className="flex justify-center items-center h-26-6667">
+                <motion.img
+                    whileHover={{ scale: 1.1 }}          
+                    src={YouTubeImg} alt="YouTube Demo" title="YouTube Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                  />
+                </div>
+                {/* project description */}
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
+                  YouTube clone with user login, category management, and YouTube API integration. Features a sleek interface and is available as a web application.
+                  </p>
+                </div>
+                {/* div to horizontally align the stack div */}
+                <div className="grid justify-center items-center h-9">
+                  {/* project stacks */}
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
+                    {/* TYPESCRIPT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={TSColor} alt="TypeScript Icon" title="TypeScript" />
+                    </div>
+                    {/* STYLED COMPONENTS ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={StyledComponentsColor} alt="Styled Components Icon" title="Styled Components" />
+                    </div>
+                    {/* REACT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={ReactColor} alt="React Native Icon" title="React Native" />
+                    </div>
+                    {/* AXIOS ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={AxiosColor} alt="Axios Icon" title="Axios" className="object-contain w-auto h-5" />
+                    </div>
+                    {/* Webpack ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={WebpackColor} alt="Webpack Icon" title="Webpack" />
+                    </div>
+                    {/* RRDColor ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={RRDColor} alt="React Router DOM Icon" title="React Router DOM" />
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+                {/* extern links (github and demo) */}
+                
+                <div className="flex justify-center items-center gap-4  h-8-3333">
+                <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://github.com/AdemirStefanski/YouTube" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Code</motion.p>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project demonstration link  */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://youtube-eosin-two.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Demo</motion.p>
                       </a>
                     </div>
                   </div>
