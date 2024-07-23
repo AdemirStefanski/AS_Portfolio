@@ -6,7 +6,8 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import Link from "./Link";
 
-import Logo2 from "@/assets/logo2.png";
+//import Logo2 from "@/assets/logo2.png";
+import Logo from "@/assets/logo.png";
 
 // Definição dos tipos de props aceitos pelo componente Navbar
 type Props = {
@@ -57,7 +58,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           {/* Contêiner interno do cabeçalho */}
           <div className={`${flexBetween} w-full gap-16`}>
             {/* Lado esquerdo */}
-            <img alt="logo" src={Logo2} className="h-10  object-contain"/>
+            <img alt="logo" src={Logo} className="h-8  object-contain"/>
 
             {/* Lado direito */}
             {isAboveMediumScreens ? (

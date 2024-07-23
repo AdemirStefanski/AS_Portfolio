@@ -66,7 +66,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
     },
     {
       id: 4,
-      title: 'React: Desenvolva Aplicações Web Usando JSX e Hooks',
+      title: 'React: Develop Web Applications Using JSX And Hooks',
       duration: '58 hours',
       syllabus: [
         'HTML and CSS: development environments, file structure and tags',
@@ -77,7 +77,90 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Node.js and Terminal: Mastering the Front-End Development Environment',
         'React: configuring and structuring projects with Vite',
       ],
-      imageUrl: '/src/assets/certification/Degree React_JSX_Hooks.jpg',
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree React_ develop web applications using JSX and Hooks - Alura.jpg',
+    },
+    {
+      id: 5,
+      title: 'Next.js And Tailwind: Building A Design System',
+      duration: '39 hours',
+      syllabus: [
+        'React: creating a Design System with TailwindCSS',
+        'React: evolve your Design System with TailwindCSS',
+        'React: level up your documentation in Storybook',
+        'React: version and publish your Design System',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Next.jpg',
+    },
+    {
+      id: 6,
+      title: 'Bootstrap 5: Responsive And Attractive Website Development',
+      duration: '15 hours',
+      syllabus: [
+        'Bootstrap5: create a responsive landing page',
+        'Bootstrap 5: New Features and HTML, CSS, and JavaScript Best Practices',
+      ],
+      imageUrl: '/src/assets/certification/Degree Bootstrap 5_ Responsive and Attractive Website Development - Alura.jpg',
+    },
+    {
+      id: 7,
+      title: 'Develop Web And Mobile Applications With React And React Native',
+      duration: '36 hours',
+      syllabus: [
+        'React Native: Building a Native-based App',
+        'React Native: integrating an App with the Web API',
+        'React with Typescript: developing an admin area',
+        'React with Typescript: Develop a registration and authentication system',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Develop Web and Mobile applications with React and React Native - Alura.jpg',
+    },
+    {
+      id: 8,
+      title: 'Develop Web Applications With Javascript',
+      duration: '63 hours',
+      syllabus: [
+        'JavaScript for the Web: Create Dynamic Pages',
+        'JavaScript: manipulating elements in the DOM',
+        'JavaScript: exploring element and localStorage manipulation',
+        'JavaScript: validations and speech recognition',
+        'JavaScript: consuming and processing data from an API',
+        'JavaScript: array methods',
+        'JavaScript: creating requests',
+        'JavaScript: validating forms',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Develop Web applications with JavaScript - Alura.jpg',
+    },
+    {
+      id: 9,
+      title: 'Manage React Applications With Typescript',
+      duration: '79 hours',
+      syllabus: [
+        'React: writing with Typescript',
+        'React: style components with Styled Components and manipulate static files',
+        'React: getting to know the React Router library',
+        'React: Integrating your React project with APIs',
+        'HTTP: understanding the web under the hood',
+        'React: Managing State with Recoil',
+        'React: testing your components',
+        'React: optimizing performance',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Manage React applications with Typescript - Alura.jpg',
+    },
+    {
+      id: 10,
+      title: 'Flutter 3.0',
+      duration: ' hours',
+      syllabus: [
+        'Flutter: Widgets, Stateless, Stateful, Images and Animations',
+        'Flutter: Controller, navigation and states',
+        'Flutter: applying data persistence',
+        'Flutter with WebAPI: integrating your application',
+        'Flutter with Web API: evolving in application integration',
+        'Flutter: styling and reproducing layouts',
+        'Flutter: applying constraints and implementing responsive layouts',
+        'Flutter: applying unit, widget and mock tests',
+        'Flutter: state management with Provider',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Flutter 3.jpg',
     },
   ];
 
@@ -133,28 +216,27 @@ const Certifications = ({ setSelectedPage }: Props) => {
 
       {/* Lista de cursos */}
       <motion.div className="flex flex-col items-center w-full">
-        <motion.div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4 justify-around w-9/12 bg-primary-50 rounded-lg p-3">
-          {courses.map((course) => (
-            <div key={course.id} className="flex items-center justify-center m-2 max-w-64">
-              <div className="w-8 min-w-8">
-                <img
-                  src={CertificateIcon}
-                  alt=""
-                  className="w-8 h-8 object-contain min-w-[22px] cursor-pointer"
-                  onClick={() => handleOpenModal(course)}
-                />
-              </div>
-              <div>
-                <p
-                  className="font-semibold pl-2 cursor-pointer"
-                  onClick={() => handleOpenModal(course)}
-                >
-                  {course.title}
-                </p>
-              </div>
+      <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-9/12 bg-primary-50 rounded-lg p-3 mt-8">
+        {courses.map((course) => (
+          <div key={course.id} className="flex items-center justify-between m-2">
+            <div className="flex items-center space-x-2">
+              <img
+                src={CertificateIcon}
+                alt={`${course.title} icon`}
+                className="w-8 h-8 object-contain cursor-pointer"
+                onClick={() => handleOpenModal(course)}
+              />
+              <p
+                className="font-semibold cursor-pointer"
+                onClick={() => handleOpenModal(course)}
+              >
+                {course.title}
+              </p>
             </div>
-          ))}
-        </motion.div>
+          </div>
+        ))}
+      </motion.div>
+
 
         {/* Modal */}
         {isModalOpen && (
