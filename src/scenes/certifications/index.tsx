@@ -36,7 +36,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Introduction to DevOps and Real-Time Applications',
         'Micro-FrontEnds, Micro-Services, and Mobile App Development'
       ],
-      imageUrl: '/src/assets/certification/certification_001.jpg',
+      imageUrl: '/src/assets/certification/certify2.jpg',
     },
     {
       id: 2,
@@ -52,7 +52,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'JavaScript: creating requests',
         'JavaScript: validating forms',
       ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Develop Web applications with JavaScript - Alura.jpg',
+      imageUrl: "/src/assets/certification/certify8.jpg",
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Node.js and Terminal: Mastering the Front-End Development Environment',
         'React: configuring and structuring projects with Vite',
       ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree React_ develop web applications using JSX and Hooks - Alura.jpg',
+      imageUrl: '/src/assets/certification/certify5.jpg',
     },
     {
       id: 4,
@@ -83,7 +83,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'React: testing your components',
         'React: optimizing performance',
       ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Manage React applications with Typescript - Alura.jpg',
+      imageUrl: '/src/assets/certification/certify11.jpg',
     },
     {
       id: 5,
@@ -95,7 +95,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'React with Typescript: developing an admin area',
         'React with Typescript: Develop a registration and authentication system',
       ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Develop Web and Mobile applications with React and React Native - Alura.jpg',
+      imageUrl: '/src/assets/certification/certify7.jpg',
     },
     {
       id: 6,
@@ -107,7 +107,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Handling repositories: creating, cloning, managing branches, saving, undoing, and synchronizing changes.',
         'Practical and thorough course with examples and exercises to master Git and GitHub, making you a valuable team member.',
       ],
-      imageUrl: '/src/assets/certification/certification_003.jpg',
+      imageUrl: '/src/assets/certification/certify3.jpg',
     },
     {
       id: 7,
@@ -119,7 +119,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'React: level up your documentation in Storybook',
         'React: version and publish your Design System',
       ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Next.jpg',
+      imageUrl: '/src/assets/certification/certify12.jpg',
     },
     {
       id: 8,
@@ -129,7 +129,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Bootstrap5: create a responsive landing page',
         'Bootstrap 5: New Features and HTML, CSS, and JavaScript Best Practices',
       ],
-      imageUrl: '/src/assets/certification/Degree Bootstrap 5_ Responsive and Attractive Website Development - Alura.jpg',
+      imageUrl: '/src/assets/certification/certify4.jpg',
     },
     {
       id: 9,
@@ -146,7 +146,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Flutter: applying unit, widget and mock tests',
         'Flutter: state management with Provider',
       ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Flutter 3.jpg',
+      imageUrl: '/src/assets/certification/certify9.jpg',
     },
     {
       id: 10,
@@ -160,7 +160,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Database on AWS: Manage RDS and DynamoDB',
         'AWS: Understanding and Controlling Service Costs',
       ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Getting Started with AWS - Alura.jpg',
+      imageUrl: '/src/assets/certification/certify10.jpg',
     },
     {
       id: 11,
@@ -174,7 +174,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Access to extra content on ChatGPT and AI applied to front-end development.',
         'Participation in exclusive live sessions for professional guidance.',
       ],
-      imageUrl: '/src/assets/certification/certification_002.jpg',
+      imageUrl: '/src/assets/certification/certify2.jpg',
     },
   ];
 
