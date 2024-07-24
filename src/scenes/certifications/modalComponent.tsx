@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Course } from "@/shared/types";
-
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
 

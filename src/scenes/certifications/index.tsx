@@ -189,7 +189,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="certifications" className="w-full min-h-screen md:py-20 sm:py-12 py-6 flex flex-col items-center">
+    <section id="certifications" className="w-full min-h-screen md:py-20 sm:py-12 py-6 flex flex-col justify-center items-center">
       <div className="flex flex-col items-center justify-center w-full">
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Certifications)}>
           <motion.div
