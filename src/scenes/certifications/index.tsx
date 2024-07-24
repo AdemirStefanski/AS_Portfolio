@@ -40,81 +40,6 @@ const Certifications = ({ setSelectedPage }: Props) => {
     },
     {
       id: 2,
-      title: 'Front-end Immersion',
-      duration: '5 hours',
-      syllabus: [
-        'Consolidation of knowledge in HTML, CSS, and JavaScript.',
-        'Practical development of the front-end for a music streaming page.',
-        'Introduction to programming with popular frameworks like React and Angular.',
-        'Learning advanced concepts: responsiveness, positioning, animations, and efficient design.',
-        'Access to extra content on ChatGPT and AI applied to front-end development.',
-        'Participation in exclusive live sessions for professional guidance.',
-      ],
-      imageUrl: '/src/assets/certification/certification_002.jpg',
-    },
-    {
-      id: 3,
-      title: 'Versioning with Git and GitHub',
-      duration: '2 hours',
-      syllabus: [
-        'Introduction to version control, Git, and GitHub.',
-        'Installing and configuring Git on various operating systems and secure session authentication.',
-        'Handling repositories: creating, cloning, managing branches, saving, undoing, and synchronizing changes.',
-        'Practical and thorough course with examples and exercises to master Git and GitHub, making you a valuable team member.',
-      ],
-      imageUrl: '/src/assets/certification/certification_003.jpg',
-    },
-    {
-      id: 4,
-      title: 'React: Develop Web Applications Using JSX And Hooks',
-      duration: '58 hours',
-      syllabus: [
-        'HTML and CSS: development environments, file structure and tags',
-        'HTML and CSS: Classes, positioning and Flexbox',
-        'JavaScript for the Web: Create Dynamic Pages',
-        'JavaScript: manipulating elements in the DOM',
-        'React: building components with JSX',
-        'Node.js and Terminal: Mastering the Front-End Development Environment',
-        'React: configuring and structuring projects with Vite',
-      ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree React_ develop web applications using JSX and Hooks - Alura.jpg',
-    },
-    {
-      id: 5,
-      title: 'Next.js And Tailwind: Building A Design System',
-      duration: '39 hours',
-      syllabus: [
-        'React: creating a Design System with TailwindCSS',
-        'React: evolve your Design System with TailwindCSS',
-        'React: level up your documentation in Storybook',
-        'React: version and publish your Design System',
-      ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Next.jpg',
-    },
-    {
-      id: 6,
-      title: 'Bootstrap 5: Responsive And Attractive Website Development',
-      duration: '15 hours',
-      syllabus: [
-        'Bootstrap5: create a responsive landing page',
-        'Bootstrap 5: New Features and HTML, CSS, and JavaScript Best Practices',
-      ],
-      imageUrl: '/src/assets/certification/Degree Bootstrap 5_ Responsive and Attractive Website Development - Alura.jpg',
-    },
-    {
-      id: 7,
-      title: 'Develop Web And Mobile Applications With React And React Native',
-      duration: '36 hours',
-      syllabus: [
-        'React Native: Building a Native-based App',
-        'React Native: integrating an App with the Web API',
-        'React with Typescript: developing an admin area',
-        'React with Typescript: Develop a registration and authentication system',
-      ],
-      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Develop Web and Mobile applications with React and React Native - Alura.jpg',
-    },
-    {
-      id: 8,
       title: 'Develop Web Applications With Javascript',
       duration: '63 hours',
       syllabus: [
@@ -130,7 +55,22 @@ const Certifications = ({ setSelectedPage }: Props) => {
       imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Develop Web applications with JavaScript - Alura.jpg',
     },
     {
-      id: 9,
+      id: 3,
+      title: 'React: Develop Web Applications Using JSX And Hooks',
+      duration: '58 hours',
+      syllabus: [
+        'HTML and CSS: development environments, file structure and tags',
+        'HTML and CSS: Classes, positioning and Flexbox',
+        'JavaScript for the Web: Create Dynamic Pages',
+        'JavaScript: manipulating elements in the DOM',
+        'React: building components with JSX',
+        'Node.js and Terminal: Mastering the Front-End Development Environment',
+        'React: configuring and structuring projects with Vite',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree React_ develop web applications using JSX and Hooks - Alura.jpg',
+    },
+    {
+      id: 4,
       title: 'Manage React Applications With Typescript',
       duration: '79 hours',
       syllabus: [
@@ -146,7 +86,53 @@ const Certifications = ({ setSelectedPage }: Props) => {
       imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Manage React applications with Typescript - Alura.jpg',
     },
     {
-      id: 10,
+      id: 5,
+      title: 'Develop Web And Mobile Applications With React And React Native',
+      duration: '36 hours',
+      syllabus: [
+        'React Native: Building a Native-based App',
+        'React Native: integrating an App with the Web API',
+        'React with Typescript: developing an admin area',
+        'React with Typescript: Develop a registration and authentication system',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Develop Web and Mobile applications with React and React Native - Alura.jpg',
+    },
+    {
+      id: 6,
+      title: 'Versioning with Git and GitHub',
+      duration: '2 hours',
+      syllabus: [
+        'Introduction to version control, Git, and GitHub.',
+        'Installing and configuring Git on various operating systems and secure session authentication.',
+        'Handling repositories: creating, cloning, managing branches, saving, undoing, and synchronizing changes.',
+        'Practical and thorough course with examples and exercises to master Git and GitHub, making you a valuable team member.',
+      ],
+      imageUrl: '/src/assets/certification/certification_003.jpg',
+    },
+    {
+      id: 7,
+      title: 'Next.js And Tailwind: Building A Design System',
+      duration: '39 hours',
+      syllabus: [
+        'React: creating a Design System with TailwindCSS',
+        'React: evolve your Design System with TailwindCSS',
+        'React: level up your documentation in Storybook',
+        'React: version and publish your Design System',
+      ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Next.jpg',
+    },
+    {
+      id: 8,
+      title: 'Bootstrap 5: Responsive And Attractive Website Development',
+      duration: '15 hours',
+      syllabus: [
+        'Bootstrap5: create a responsive landing page',
+        'Bootstrap 5: New Features and HTML, CSS, and JavaScript Best Practices',
+      ],
+      imageUrl: '/src/assets/certification/Degree Bootstrap 5_ Responsive and Attractive Website Development - Alura.jpg',
+    },
+    {
+      id: 9,
       title: 'Flutter 3.0',
       duration: '96 hours',
       syllabus: [
@@ -163,7 +149,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
       imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Flutter 3.jpg',
     },
     {
-      id: 11,
+      id: 10,
       title: 'Getting Start with AWS',
       duration: '47 hours',
       syllabus: [
@@ -176,6 +162,20 @@ const Certifications = ({ setSelectedPage }: Props) => {
         '185 out of 185 activities were done.',
               ],
       imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Getting Started with AWS - Alura.jpg',
+    },
+    {
+      id: 11,
+      title: 'Front-end Immersion',
+      duration: '5 hours',
+      syllabus: [
+        'Consolidation of knowledge in HTML, CSS, and JavaScript.',
+        'Practical development of the front-end for a music streaming page.',
+        'Introduction to programming with popular frameworks like React and Angular.',
+        'Learning advanced concepts: responsiveness, positioning, animations, and efficient design.',
+        'Access to extra content on ChatGPT and AI applied to front-end development.',
+        'Participation in exclusive live sessions for professional guidance.',
+      ],
+      imageUrl: '/src/assets/certification/certification_002.jpg',
     },
   ];
 
