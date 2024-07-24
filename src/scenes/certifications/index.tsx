@@ -159,8 +159,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Amazon S3: Manipulate and store objects in the cloud',
         'Database on AWS: Manage RDS and DynamoDB',
         'AWS: Understanding and Controlling Service Costs',
-        '185 out of 185 activities were done.',
-              ],
+      ],
       imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Getting Started with AWS - Alura.jpg',
     },
     {
@@ -190,79 +189,78 @@ const Certifications = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="certifications" className="w-full md:py-20 sm:py-12 py-6 flex flex-col items-center">
-      <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Certifications)}
-      >
-        <motion.div
-          className="mx-auto w-auto flex flex-col items-center justify-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
+    <section id="certifications" className="w-full min-h-screen md:py-20 sm:py-12 py-6 flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center w-full">
+        <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Certifications)}>
           <motion.div
-            className="md:w-3/5 flex justify-center items-center h-20 text-center"
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
+            className="mx-auto w-auto flex flex-col items-center justify-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
-          >
-            <TextTitles>Certifications</TextTitles>
-          </motion.div>
-          <motion.p
-            className="pb-4 text-center w-9/12 font-semibold"
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}
-            transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Explore my certifications that demonstrate my dedication and proficiency in various essential front-end development technologies and tools.
-          </motion.p>
+            <motion.div
+              className="md:w-3/5 flex justify-center items-center h-20 text-center"
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              transition={{ duration: 0.5 }}
+            >
+              <TextTitles>Certifications</TextTitles>
+            </motion.div>
+            <motion.p
+              className="pb-4 text-center w-9/12 font-semibold"
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              Explore my certifications that demonstrate my dedication and proficiency in various essential front-end development technologies and tools.
+            </motion.p>
+          </motion.div>
         </motion.div>
 
-      </motion.div>
+        {/* Lista de cursos */}
+        <motion.div className="flex flex-col items-center w-full">
+          <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-9/12 bg-primary-50 rounded-lg p-3 mt-8">
+            {courses.map((course) => (
+              <div key={course.id} className="flex items-center justify-between m-2">
+                <div className="flex items-center space-x-2">
+                  <img
+                    src={CertificateIcon}
+                    alt={`${course.title} icon`}
+                    className="w-8 h-8 object-contain cursor-pointer"
+                    onClick={() => handleOpenModal(course)}
+                  />
+                  <p
+                    className="font-semibold cursor-pointer"
+                    onClick={() => handleOpenModal(course)}
+                  >
+                    {course.title}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.div>
 
-      {/* Lista de cursos */}
-      <motion.div className="flex flex-col items-center w-full">
-      <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-9/12 bg-primary-50 rounded-lg p-3 mt-8">
-        {courses.map((course) => (
-          <div key={course.id} className="flex items-center justify-between m-2">
-            <div className="flex items-center space-x-2">
-              <img
-                src={CertificateIcon}
-                alt={`${course.title} icon`}
-                className="w-8 h-8 object-contain cursor-pointer"
-                onClick={() => handleOpenModal(course)}
-              />
-              <p
-                className="font-semibold cursor-pointer"
-                onClick={() => handleOpenModal(course)}
-              >
-                {course.title}
-              </p>
-            </div>
-          </div>
-        ))}
-      </motion.div>
-
-
-        {/* Modal */}
-        {isModalOpen && (
-          <Modal
-            isOpen={isModalOpen}
-            onClose={handleCloseModal}
-            content={selectedCourse}
-          />
-        )}
-      </motion.div>
+          {/* Modal */}
+          {isModalOpen && (
+            <Modal
+              isOpen={isModalOpen}
+              onClose={handleCloseModal}
+              content={selectedCourse}
+            />
+          )}
+        </motion.div>
+      </div>
     </section>
+
 
   )
 }

@@ -29,29 +29,14 @@ const Footer = ( ) => {
             <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-4 md:hidden xsl:mb-4 w-3/5"/>
           </div>
           <h4 className="font-bold w-auto text-center">Links</h4>
-          <motion.div className="flex gap-4 xls:justify-start w-auto pt-4 justify-center"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{once: true, amount: 0.5}}
-              transition={{delay: 0.1, duration: 0.5}}
-              variants={{
-                hidden: {opacity: 0, x:-30},
-                visible: {opacity:1, x:0},
-              }}
-          >
+          <motion.div className="flex gap-4 xls:justify-start w-auto pt-4 justify-center">
               {/* linkedin links */}
               <a href="https://www.linkedin.com/in/ademir-stefanski/" target="_blank" rel="noopener noreferrer">
-                <motion.div className="w-8 h-8 object-contain content-linkedinnocolor hover:content-linkedincolor"
-                  whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
-                  whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
-                />
+                <motion.div className="w-8 h-8 object-contain content-linkedinnocolor hover:content-linkedincolor"/>
               </a>
               {/* github links */}
               <a href="https://github.com/AdemirStefanski" target="_blank" rel="noopener noreferrer">
-                <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor"
-                  whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
-                  whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
-                />
+                <div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor"/>
               </a>  
           </motion.div>
         </div>
