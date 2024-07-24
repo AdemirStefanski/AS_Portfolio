@@ -71,7 +71,7 @@ const Projects = ({ setSelectedPage }: Props) => {
       >
         <div className="mdd:my-5 mdd:w-auto flex flex-col justify-center">
           <motion.div
-            className="flex flex-row justify-center text-center"
+            className="flex flex-row justify-center text-center mt-12  mdd:mt-6"
             initial="hidden"
             whileInView="visible"
             viewport={{once: true, amount: 0.5}}
