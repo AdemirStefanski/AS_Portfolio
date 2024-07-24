@@ -36,7 +36,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Introduction to DevOps and Real-Time Applications',
         'Micro-FrontEnds, Micro-Services, and Mobile App Development'
       ],
-      imageUrl: '/src/assets/projects/certification/certify2.jpg',
+      imageUrl: '/src/assets/projects/project_screens/sitePrintReformaFácil.jpg',
     },
     {
       id: 2,
