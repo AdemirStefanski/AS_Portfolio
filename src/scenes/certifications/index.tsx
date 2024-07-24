@@ -148,7 +148,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
     {
       id: 10,
       title: 'Flutter 3.0',
-      duration: ' hours',
+      duration: '96 hours',
       syllabus: [
         'Flutter: Widgets, Stateless, Stateful, Images and Animations',
         'Flutter: Controller, navigation and states',
@@ -161,6 +161,21 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Flutter: state management with Provider',
       ],
       imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Flutter 3.jpg',
+    },
+    {
+      id: 11,
+      title: 'Getting Start with AWS',
+      duration: '47 hours',
+      syllabus: [
+        'Amazon Lightsail: Making the Cloud Uncomplicated',
+        'Amazon EC2: high availability and scalability in one application',
+        'Amazon VPC: Configuring Networks on AWS',
+        'Amazon S3: Manipulate and store objects in the cloud',
+        'Database on AWS: Manage RDS and DynamoDB',
+        'AWS: Understanding and Controlling Service Costs',
+        '185 out of 185 activities were done.',
+              ],
+      imageUrl: '/src/assets/certification/Ademir Stefanski Junior - Degree Getting Started with AWS - Alura.jpg',
     },
   ];
 
