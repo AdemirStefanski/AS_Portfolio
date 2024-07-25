@@ -52,7 +52,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'JavaScript: creating requests',
         'JavaScript: validating forms',
       ],
-      imageUrl: ".Certify8",
+      imageUrl: "Certify8",
     },
     {
       id: 3,
