@@ -36,7 +36,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Introduction to DevOps and Real-Time Applications',
         'Micro-FrontEnds, Micro-Services, and Mobile App Development'
       ],
-      imageUrl: '/src/assets/projects/certification/certify14.jpg',
+      imageUrl: 'Certify14',
     },
     {
       id: 2,
@@ -52,7 +52,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'JavaScript: creating requests',
         'JavaScript: validating forms',
       ],
-      imageUrl: "./src/assets/projects/certification/certify8.jpg",
+      imageUrl: ".Certify8",
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Node.js and Terminal: Mastering the Front-End Development Environment',
         'React: configuring and structuring projects with Vite',
       ],
-      imageUrl: '/src/assets/projects/certification/certify5.jpg',
+      imageUrl: 'Certify5',
     },
     {
       id: 4,
@@ -83,7 +83,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'React: testing your components',
         'React: optimizing performance',
       ],
-      imageUrl: '/src/assets/projects/certification/certify11.jpg',
+      imageUrl: 'Certify11',
     },
     {
       id: 5,
@@ -95,7 +95,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'React with Typescript: developing an admin area',
         'React with Typescript: Develop a registration and authentication system',
       ],
-      imageUrl: '/src/assets/projects/certification/certify7.jpg',
+      imageUrl: 'Certify7',
     },
     {
       id: 6,
@@ -107,7 +107,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Handling repositories: creating, cloning, managing branches, saving, undoing, and synchronizing changes.',
         'Practical and thorough course with examples and exercises to master Git and GitHub, making you a valuable team member.',
       ],
-      imageUrl: '/src/assets/projects/certification/certify3.jpg',
+      imageUrl: 'Certify3',
     },
     {
       id: 7,
@@ -119,7 +119,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'React: level up your documentation in Storybook',
         'React: version and publish your Design System',
       ],
-      imageUrl: '/src/assets/projects/certification/certify12.jpg',
+      imageUrl: 'Certify12',
     },
     {
       id: 8,
@@ -129,7 +129,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Bootstrap5: create a responsive landing page',
         'Bootstrap 5: New Features and HTML, CSS, and JavaScript Best Practices',
       ],
-      imageUrl: '/src/assets/projects/certification/certify4.jpg',
+      imageUrl: 'Certify4',
     },
     {
       id: 9,
@@ -146,7 +146,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Flutter: applying unit, widget and mock tests',
         'Flutter: state management with Provider',
       ],
-      imageUrl: '/src/assets/projects/certification/certify9.jpg',
+      imageUrl: 'Certify9',
     },
     {
       id: 10,
@@ -160,7 +160,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Database on AWS: Manage RDS and DynamoDB',
         'AWS: Understanding and Controlling Service Costs',
       ],
-      imageUrl: '/src/assets/projects/certification/certify10.jpg',
+      imageUrl: 'Certify10',
     },
     {
       id: 11,
@@ -174,7 +174,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Access to extra content on ChatGPT and AI applied to front-end development.',
         'Participation in exclusive live sessions for professional guidance.',
       ],
-      imageUrl: '/src/assets/projects/certification/certify2.jpg',
+      imageUrl: 'Certify2',
     },
   ];
 

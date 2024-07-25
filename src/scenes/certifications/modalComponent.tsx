@@ -2,13 +2,16 @@ import React, { useEffect } from 'react';
 import { Course } from "@/shared/types";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
-import CertificatonImg from "@/assets/projects/certification/certify10.jpg";
+
+import Images from './certifyImports';
 
 interface ModalProps {
   onClose: () => void;
   isOpen: boolean;
   content: Course | null;
 }
+
+
 
 // Função para desabilitar o scroll da página
 const disableScroll = () => {
@@ -18,6 +21,23 @@ const disableScroll = () => {
 // Função para habilitar o scroll da página
 const enableScroll = () => {
   document.body.style.overflow = 'auto';
+};
+
+// Map image names to their respective imports
+const imageMap: { [key: string]: string } = {
+  Certify2: Images[0],
+  Certify3: Images[1],
+  Certify4: Images[2],
+  Certify5: Images[3],
+  Certify6: Images[4],
+  Certify7: Images[5],
+  Certify8: Images[6],
+  Certify9: Images[7],
+  Certify10: Images[8],
+  Certify11: Images[9],
+  Certify12: Images[10],
+  Certify13: Images[11],
+  Certify14: Images[12],
 };
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content  }) => {
@@ -42,6 +62,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content  }) => {
     };
   }, []); // Executa apenas uma vez ao montar o componente
   
+  const imageUrl = imageMap[content.imageUrl];
+
   return (
     <div 
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 backdrop-blur z-40"
@@ -62,7 +84,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content  }) => {
         </button>
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-2/5 flex items-center justify-center">
-            <img src={CertificatonImg} alt="Certification" className="rounded-lg max-w-full h-auto shadow-xl" />
+            <img src={imageUrl} alt="Certification" className="rounded-lg max-w-full h-auto shadow-xl" />
           </div>
           <div className="pl-4 mt-4 md:mt-0 md:w-auto">
             <div className="pb-1">
