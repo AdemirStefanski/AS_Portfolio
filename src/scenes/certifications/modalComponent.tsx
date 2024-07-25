@@ -61,7 +61,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content  }) => {
         </button>
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-2/5 flex items-center justify-center">
-            <img src={content.imageUrl} alt="Certification" className="rounded-lg max-w-full h-auto shadow-xl" />
+            <img src="/src/assets/projects/certification/certify14.jpg" alt="Certification" className="rounded-lg max-w-full h-auto shadow-xl" />
           </div>
           <div className="pl-4 mt-4 md:mt-0 md:w-auto">
             <div className="pb-1">
