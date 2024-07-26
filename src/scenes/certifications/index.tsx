@@ -103,9 +103,9 @@ const Certifications = ({ setSelectedPage }: Props) => {
       duration: '2 hours',
       syllabus: [
         'Introduction to version control, Git, and GitHub.',
-        'Installing and configuring Git on various operating systems and secure session authentication.',
-        'Handling repositories: creating, cloning, managing branches, saving, undoing, and synchronizing changes.',
-        'Practical and thorough course with examples and exercises to master Git and GitHub, making you a valuable team member.',
+        'Installing and configuring Git on various operating systems and secure session authentication',
+        'Handling repositories: creating, cloning, managing branches, saving, undoing, and synchronizing changes',
+        'Practical and thorough course with examples and exercises to master Git and GitHub, making you a valuable team member',
       ],
       imageUrl: 'Certify3',
     },
@@ -167,12 +167,12 @@ const Certifications = ({ setSelectedPage }: Props) => {
       title: 'Front-end Immersion',
       duration: '5 hours',
       syllabus: [
-        'Consolidation of knowledge in HTML, CSS, and JavaScript.',
-        'Practical development of the front-end for a music streaming page.',
-        'Introduction to programming with popular frameworks like React and Angular.',
-        'Learning advanced concepts: responsiveness, positioning, animations, and efficient design.',
-        'Access to extra content on ChatGPT and AI applied to front-end development.',
-        'Participation in exclusive live sessions for professional guidance.',
+        'Consolidation of knowledge in HTML, CSS, and JavaScript',
+        'Practical development of the front-end for a music streaming page',
+        'Introduction to programming with popular frameworks like React and Angular',
+        'Learning advanced concepts: responsiveness, positioning, animations, and efficient design',
+        'Access to extra content on ChatGPT and AI applied to front-end development',
+        'Participation in exclusive live sessions for professional guidance',
       ],
       imageUrl: 'Certify2',
     },
@@ -190,10 +190,10 @@ const Certifications = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="certifications" className="w-full min-h-screen md:py-20 sm:py-12 py-6 flex flex-col justify-center items-center">
-      <div className="flex flex-col items-center justify-center w-full">
+      <div className="flex flex-col items-center justify-center w-full ">
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Certifications)}>
           <motion.div
-            className="mx-auto w-auto flex flex-col items-center justify-center"
+            className="mx-auto w-11/12 flex flex-col items-center justify-center "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -204,7 +204,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
             }}
           >
             <motion.div
-              className="md:w-3/5 flex justify-center items-center h-20 text-center"
+              className="md:w-3/5 flex justify-center items-center h-20 text-center "
               variants={{
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
@@ -214,14 +214,14 @@ const Certifications = ({ setSelectedPage }: Props) => {
               <TextTitles>Certifications</TextTitles>
             </motion.div>
             <motion.p
-              className="pb-4 text-center w-9/12 font-semibold"
+              className="pb-4 text-center w-9/12 font-semibold "
               variants={{
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
               }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Explore my certifications that demonstrate my dedication and proficiency in various essential front-end development technologies and tools.
+              Get to know more about my proficiency in various front-end development technologies and tools.
             </motion.p>
           </motion.div>
         </motion.div>

@@ -105,7 +105,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                 {/* project description */}
                 <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
                   <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
-                    Connects clients with construction and renovation professionals, offering free quotes and service hiring. Also available as Android app.
+                  Construtech company website. It connects clients with construction and renovation professionals, offering free quotes and service hiring.
                   </p>
                 </div>
                 {/* div to horizontally align the stack div */}
