@@ -108,7 +108,7 @@ const Home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
             
-            {/* breve descrição sobre mim */}
+            {/* short about me */}
             <div>
               <p className="mt-2 mdd:text-right">
               Welcome to my portfolio! I'm a Front-end Developer passionate about creating dynamic and intuitive web interfaces. Here you'll find a selection of my best work. Feel free to take a look and get to know more about my career and projects.
@@ -126,19 +126,27 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: {opacity:1, x:0},
               }}
             >
+              {/* linkedin link */}
               <a href="https://www.linkedin.com/in/ademir-stefanski/" target="_blank" rel="noopener noreferrer">
                 <motion.div className="w-8 h-8 object-contain content-linkedinnocolor hover:content-linkedincolor"
                   whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
                   whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
                 />
               </a>
-
+              {/* github link */}
               <a href="https://github.com/AdemirStefanski" target="_blank" rel="noopener noreferrer">
                 <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor"
                   whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
                   whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
                 />
               </a>  
+              {/* resume link */}
+              <a href="https://drive.google.com/file/d/1Bq2tP5_OcawT3PWi0N14gy3X820UibT3/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <motion.div className="w-8 h-8 object-contain content-resumenocolor hover:content-resumecolor"
+                  whileHover={{ y: -5, transition: { duration: 0.1 } }} // Define o movimento para cima de 5 pixels com uma transição de 0.1 segundos
+                  whileTap={{ scale: 0.9 }} // Escala do ícone ao clicar
+                />
+              </a>
 
             </motion.div>
 

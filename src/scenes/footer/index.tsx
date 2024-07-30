@@ -37,7 +37,11 @@ const Footer = ( ) => {
               {/* github links */}
               <a href="https://github.com/AdemirStefanski" target="_blank" rel="noopener noreferrer">
                 <div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor"/>
-              </a>  
+              </a>
+              {/* resume links */}
+              <a href="https://drive.google.com/file/d/1Bq2tP5_OcawT3PWi0N14gy3X820UibT3/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <div className="w-8 h-8 object-contain content-resumenocolor hover:content-resumecolor"/>
+              </a>   
           </motion.div>
         </div>
         {/* Contact me links */}
@@ -48,7 +52,7 @@ const Footer = ( ) => {
           <h4 className="font-bold">Contact Me</h4>
           <div className="flex justify-center items-center md:justify-start">
             <img src={Phone} alt="" className=" h-6 pr-1 " />
-            <p className="my-5">+55 11 981412-507 </p>
+            <p className="my-5">+55 11 98141-2507 </p>
           </div>
           <p>To get in touch, please send me an <a href="#" onClick={(e) => { e.preventDefault(); openMail(); }} className="font-extrabold text-my-colors-green-10">e-mail</a>.</p>
         </div>

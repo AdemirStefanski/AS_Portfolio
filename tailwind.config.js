@@ -61,6 +61,8 @@ module.exports = {
         linkedincolor: "url('./assets/icons/color/linkedInLogo_color.png')",
         githubnocolor: "url('./assets/icons/baw/gitHubLogo_no_color.png')",
         githubcolor: "url('./assets/icons/color/gitHubLogo_color.png')",
+        resumenocolor: "url('./assets/icons/baw/resume_bw.png')",
+        resumecolor: "url('./assets/icons/color/resume_color.png')",
         democolor: "url('./assets/icons/color/exportarColor.png')",
         demonocolor: "url('./assets/icons/baw/exportarPB.png')",
         demonograythird: "url('./assets/icons/baw/exportarGrayThird.png')",
