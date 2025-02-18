@@ -20,6 +20,9 @@ import ProjectPokemonLogo from "@/assets/projects/logos/PokeHouseLogo.png";
 import ProjectTheBatmanImg from "@/assets/projects/project_screens/sitePrintBatman.jpg";
 import ProjectTheBatmanLogo from "@/assets/projects/logos/TheBatmanLogo.png";
 
+//PROJECT KAZE NO MORI PRINT/LOGO IMPORT
+import KazeNoMoriImg from "@/assets/projects/project_screens/siteKazeNoMori.jpg";
+import KazeNoMoriLogo from "@/assets/projects/logos/KazeNoMoriLogo.png";
 
 
 
@@ -38,10 +41,9 @@ import StyledComponentsColor from "@/assets/icons/color/styledcomponents.png";
 import AxiosColor from "@/assets/icons/color/axios.png";
 import WebpackColor from "@/assets/icons/color/webpack-original.png";
 import RRDColor from "@/assets/icons/color/react-router.png";
+import NodeJS from "@/assets/icons/color/nodejs.png";
 
-//import SockedColor from "@/assets/icons/color/socked.png";
-//import TailwindColor from "@/assets/icons/color/tailwindcss.png";
-//import NextColor from "@/assets/icons/color/nextjs.png";
+
 
 
 
@@ -53,12 +55,7 @@ type Props = {
 
 const Projects = ({ setSelectedPage }: Props) => {
 
-//  const [isOpen, setIsOpen] = useState(false);
 
-// Função para alternar o estado da div ao clicar no botão
-// const toggleOpen = () => {
-//   setIsOpen(!isOpen);
-//  };
 
     
   return (
@@ -85,7 +82,90 @@ const Projects = ({ setSelectedPage }: Props) => {
           </motion.div>
 
          
-          <div className="h-full w-full flex flex-wrap justify-center items-center z-10 pt-4">
+          <div className="h-full w-full max-w-[1200px] mx-auto flex flex-wrap justify-center items-center z-10 pt-4">
+
+
+            {/* project Kaze No Mori */}
+            <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
+              {/* card blue border */}
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
+                {/* project logo */}
+                <div className="flex justify-center items-center h-6-6667">
+                  <img src={KazeNoMoriLogo} alt="Kaze No Mori Logo" title="Kaze No Mori" className="object-contain h-full w-full" />
+                </div>
+                {/* project print */}
+                <div className="flex justify-center items-center h-26-6667">
+                <motion.img
+                    whileHover={{ scale: 1.1 }}          
+                    src={KazeNoMoriImg} alt="Kaze No Mori Site" title="Kaze No Mori Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                  />
+                </div>
+                {/* project description */}
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
+                  Bonsai website showcasing species details, care guides, and an API-powered product catalog with a clean, responsive design.
+                  </p>
+                </div>
+                {/* div to horizontally align the stack div */}
+                <div className="grid justify-center items-center h-9">
+                  {/* project stacks */}
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
+                  <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={TSColor} alt="TypeScript Icon" title="TypeScript" />
+                    </div>
+                    {/* STYLED COMPONENTS ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={StyledComponentsColor} alt="Styled Components Icon" title="Styled Components" />
+                    </div>
+                    {/* REACT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={ReactColor} alt="React Native Icon" title="React Native" />
+                    </div>
+                    {/* NODE.JS ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={NodeJS} alt="NodeJS Icon" title="NodeJS" />
+                    </div>          
+                    
+                    
+                    
+                  </div>
+                </div>
+                {/* extern links (github and demo) */}
+                
+                <div className="flex justify-center items-center gap-4  h-8-3333">
+                  <div className="justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 hidden">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center ">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                      </a>
+                      <p className="text-text-color-blue font-bold">Code</p>
+                    </div>
+                    
+                  </div>
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project demonstration link  */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://reformafacil.app/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Site</motion.p>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
 
             {/* project ReformaFácil */}
             <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">

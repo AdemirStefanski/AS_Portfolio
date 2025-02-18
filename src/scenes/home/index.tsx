@@ -31,6 +31,26 @@ import TSPB from "@/assets/icons/baw/Typescript.png";
 import TailwindColor from "@/assets/icons/color/tailwindcss.png";
 import TailwindPB from "@/assets/icons/baw/tailwindcss.png";
 
+//importando logos do StyledComponents(color e no color).
+import StyledComponentsColor from "@/assets/icons/color/styledcomponents.png";
+import StyledComponentsPB from "@/assets/icons/baw/styledcomponents.png";
+
+//importando logos do Bootstrap(color e no color).
+import BootstrapColor from "@/assets/icons/color/bootstrap.png";
+import BootstrapPB from "@/assets/icons/baw/bootstrap.png";
+
+import ViteColor from "@/assets/icons/color/vite.png";
+import VitePB from "@/assets/icons/baw/vite.png";
+
+import AngularColor from "@/assets/icons/color/angular.png";
+import AngularPB from "@/assets/icons/baw/angular.png";
+
+import NodeJSColor from "@/assets/icons/color/nodejs.png";
+import NodeJSPB from "@/assets/icons/baw/nodejs.png";
+
+import SQLColor from "@/assets/icons/color/sql.png";
+import SQLPB from "@/assets/icons/baw/sql.png";
+
 //importando logos do Axios(color e no color).
 import AxiosColor from "@/assets/icons/color/axios.png";
 import AxiosPB from "@/assets/icons/baw/axios.png";
@@ -216,12 +236,20 @@ const Home = ({ setSelectedPage }: Props) => {
 
               <div className="w-10 h-10 flex justify-center items-center">
               <img
-                  src={loaded ? TailwindPB : TailwindColor }
-                  alt="Tailwind" title="Tailwind"
+                  src={loaded ? AngularPB : AngularColor }
+                  alt="Angular" title="Angular"
                   className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
               />            
               </div>
 
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? VitePB : ViteColor }
+                  alt="Vite" title="Vite"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+              
               <div className="w-10 h-10 flex justify-center items-center">
               <img
                   src={loaded ? AxiosPB : AxiosColor }
@@ -232,11 +260,53 @@ const Home = ({ setSelectedPage }: Props) => {
 
               <div className="w-10 h-10 flex justify-center items-center">
               <img
+                  src={loaded ? NodeJSPB : NodeJSColor }
+                  alt="NodeJS" title="NodeJS"
+                  className={`max-w-full h-10 max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out object-cover`}
+              />            
+              </div>
+              
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? SQLPB : SQLColor }
+                  alt="SQL" title="SQL"
+                  className={`w-full h-full object-contain ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
                   src={loaded ? NextPB : NextColor }
                   alt="Next.JS" title="Next.JS"
                   className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
               />            
               </div>
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? TailwindPB : TailwindColor }
+                  alt="Tailwind" title="Tailwind"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? BootstrapPB : BootstrapColor }
+                  alt="Bootstrap" title="Bootstrap"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? StyledComponentsPB : StyledComponentsColor }
+                  alt="StyledComponents" title="StyledComponents"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+              
+
             </div>
           </div>
         ) : (
@@ -246,68 +316,118 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
             <div className="w-px h-5 bg-black mx-2"></div>
             <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? HTML5IconPeB : HTML5IconColor }
-                alt="HTML 5" title="HTML 5"
-                className={`max-w-full max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
-            
-            <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? CSSPB : CSSColor }
-                alt="CSS 3" title="CSS 3"
-                className={`max-w-full max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
+              <img
+                  src={loaded ? HTML5IconPeB : HTML5IconColor }
+                  alt="HTML 5" title="HTML 5"
+                  className={`max-w-full max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+              
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? CSSPB : CSSColor }
+                  alt="CSS 3" title="CSS 3"
+                  className={`max-w-full h-10 max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out object-cover`}
+              />            
+              </div>
 
-            <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? JSPB : JSColor }
-                alt="JavaScripty" title="JavaScripty"
-                className={`max-w-full max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
-                    
-            <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? TSPB : TSColor }
-                alt="TypeScripty" title="TypeScripty"
-                className={`w-auto h-auto transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? JSPB : JSColor }
+                  alt="JavaScripty" title="JavaScripty"
+                  className={`max-w-full max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+                      
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? TSPB : TSColor }
+                  alt="TypeScripty" title="TypeScripty"
+                  className={`w-auto h-auto transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
 
-            <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? ReactPB : ReactColor }
-                alt="React" title="React"
-                className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? ReactPB : ReactColor }
+                  alt="React" title="React"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
 
-            <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? TailwindPB : TailwindColor }
-                alt="Tailwind" title="Tailwind"
-                className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? AngularPB : AngularColor }
+                  alt="Angular" title="Angular"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
 
-            <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? AxiosPB : AxiosColor }
-                alt="Axios" title="Axios"
-                className={`max-w-full h-10 transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? VitePB : ViteColor }
+                  alt="Vite" title="Vite"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+              
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? AxiosPB : AxiosColor }
+                  alt="Axios" title="Axios"
+                  className={`max-w-full h-10 max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out object-cover`}
+              />            
+              </div>
 
-            <div className="w-10 h-10 flex justify-center items-center">
-            <img
-                src={loaded ? NextPB : NextColor }
-                alt="Next.JS" title="Next.JS"
-                className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
-            />            
-            </div>
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? NodeJSPB : NodeJSColor }
+                  alt="NodeJS" title="NodeJS"
+                  className={`max-w-full h-10 max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out object-cover`}
+              />            
+              </div>
+              
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? SQLPB : SQLColor }
+                  alt="SQL" title="SQL"
+                  className={`w-full h-full object-contain ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+              
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? NextPB : NextColor }
+                  alt="Next.JS" title="Next.JS"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? TailwindPB : TailwindColor }
+                  alt="Tailwind" title="Tailwind"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? BootstrapPB : BootstrapColor }
+                  alt="Bootstrap" title="Bootstrap"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+
+              <div className="w-10 h-10 flex justify-center items-center">
+              <img
+                  src={loaded ? StyledComponentsPB : StyledComponentsColor }
+                  alt="StyledComponents" title="StyledComponents"
+                  className={`max-w-full max-h-fulltransform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
+              />            
+              </div>
+              
           </div>
         )}
       </motion.div>
