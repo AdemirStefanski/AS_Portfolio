@@ -21,7 +21,7 @@ const Footer = ( ) => {
           <p className="my-5 text-center md:text-start">
           I hope you enjoyed exploring my projects. If you're interested in discussing opportunities or collaborating, feel free to reach out. I look forward to connecting and contributing!
           </p>
-          <p className="text-center md:text-start">© 2024 Ademir Stefanski.</p>
+          <p className="text-center md:text-start">© 2025 Ademir Stefanski.</p>
         </div>
         {/* linkedin and github external links */}
         <div className="xsl:mt-4 basis-1/4 md:mt-0 flex flex-col xls:justify-start text-center">

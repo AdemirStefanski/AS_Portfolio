@@ -131,7 +131,7 @@ const Home = ({ setSelectedPage }: Props) => {
             {/* short about me */}
             <div>
               <p className="mt-2 mdd:text-right">
-              Welcome to my portfolio! I'm a Front-end Developer passionate about creating dynamic and intuitive web interfaces. Here you'll find a selection of my best work. Feel free to take a look and get to know more about my career and projects.
+              Welcome to my portfolio! I'm a Full-stack Developer passionate about creating dynamic and intuitive web interfaces. Here you'll find a selection of my best work. Feel free to take a look and get to know more about my career and projects.
               </p>
 
             </div>
