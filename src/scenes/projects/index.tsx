@@ -144,12 +144,29 @@ const Projects = ({ setSelectedPage }: Props) => {
                       </a>
                       <p className="text-text-color-blue font-bold">Code</p>
                     </div>
-                    
                   </div>
+
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://github.com/AdemirStefanski/Kaze_no_Mori" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Code</motion.p>
+                      </a>
+                    </div>
+                  </div>
+
                   <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
                     {/* project demonstration link  */}
                     <div className="flex justify-center items-center">
-                      <a href="https://reformafacil.app/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                      <a href="https://kaze-no-mori.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center">
                         <motion.div
                           className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
                           whileHover={{ scale: 1.1 }}
@@ -312,7 +329,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                 {/* extern links (github and demo) */}
                 
                 <div className="flex justify-center items-center gap-4  h-8-3333">
-                <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2">
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2">
                     {/* project github code link */}
                     <div className="flex justify-center items-center">
                       <a href="https://github.com/AdemirStefanski/YouTube" target="_blank" rel="noopener noreferrer" className="flex items-center">
