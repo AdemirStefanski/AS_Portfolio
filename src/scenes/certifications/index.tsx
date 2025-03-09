@@ -126,7 +126,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
       title: 'Bootstrap 5: Responsive And Attractive Website Development',
       duration: '15 hours',
       syllabus: [
-        'Bootstrap5: create a responsive landing page',
+        'Bootstrap 5: create a responsive landing page',
         'Bootstrap 5: New Features and HTML, CSS, and JavaScript Best Practices',
       ],
       imageUrl: 'Certify4',

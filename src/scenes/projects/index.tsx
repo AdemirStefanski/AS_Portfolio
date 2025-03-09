@@ -175,7 +175,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                         <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
                           whileHover={{ scale: 1.1 }}
                           transition={{ stiffness: 400, damping: 10 }}
-                        >Site</motion.p>
+                        >Demo</motion.p>
                       </a>
                     </div>
                   </div>
@@ -264,7 +264,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                         <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
                           whileHover={{ scale: 1.1 }}
                           transition={{ stiffness: 400, damping: 10 }}
-                        >Site</motion.p>
+                        >Demo</motion.p>
                       </a>
                     </div>
                   </div>

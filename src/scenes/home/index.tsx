@@ -213,7 +213,7 @@ const Home = ({ setSelectedPage }: Props) => {
               <div className="w-10 h-10 flex justify-center items-center">
               <img
                   src={loaded ? JSPB : JSColor }
-                  alt="JavaScripty" title="JavaScripty"
+                  alt="JavaScript" title="JavaScript"
                   className={`max-w-full max-h-full transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
               />            
               </div>
@@ -221,7 +221,7 @@ const Home = ({ setSelectedPage }: Props) => {
               <div className="w-10 h-10 flex justify-center items-center">
               <img
                   src={loaded ? TSPB : TSColor }
-                  alt="TypeScripty" title="TypeScripty"
+                  alt="TypeScript" title="TypeScript"
                   className={`w-auto h-auto transform ${loaded ? 'scale-125' : 'scale-100'} transition-transform duration-1000 ease-out`}
               />            
               </div>
