@@ -24,6 +24,13 @@ import ProjectTheBatmanLogo from "@/assets/projects/logos/TheBatmanLogo.png";
 import KazeNoMoriImg from "@/assets/projects/project_screens/siteKazeNoMori.jpg";
 import KazeNoMoriLogo from "@/assets/projects/logos/KazeNoMoriLogo.png";
 
+//PROJECT KAZE NO GEDUI PRINT/LOGO IMPORT
+import GeduiImg from "@/assets/projects/project_screens/siteGedui.jpg";
+import GeduiLogo from "@/assets/projects/logos/GeduiLogo.png";
+
+//PROJECT KAZE NO IRONSIDE PRINT/LOGO IMPORT
+import IGTImg from "@/assets/projects/project_screens/siteIGT.jpg";
+import IGTLogo from "@/assets/projects/logos/IGTLogo.png";
 
 
 
@@ -42,6 +49,11 @@ import AxiosColor from "@/assets/icons/color/axios.png";
 import WebpackColor from "@/assets/icons/color/webpack-original.png";
 import RRDColor from "@/assets/icons/color/react-router.png";
 import NodeJS from "@/assets/icons/color/nodejs.png";
+import Bootstrap from "@/assets/icons/color/bootstrap.png";
+import Postman from "@/assets/icons/color/postman.png";
+import Figma from "@/assets/icons/color/figma.png";
+import WordPress from "@/assets/icons/color/WordPress.png";
+import Illustrator from "@/assets/icons/color/illustrator.png";
 
 
 
@@ -82,52 +94,135 @@ const Projects = ({ setSelectedPage }: Props) => {
           </motion.div>
 
          
-          <div className="h-full w-full max-w-[1200px] mx-auto flex flex-wrap justify-center items-center z-10 pt-4">
+          <div className="h-full w-full max-w-[1400px] mx-auto flex flex-wrap justify-center items-center z-10 pt-4">
 
-
-            {/* project Kaze No Mori */}
+            {/* project Gedui */}
             <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
               {/* card blue border */}
               <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
                 {/* project logo */}
                 <div className="flex justify-center items-center h-6-6667">
-                  <img src={KazeNoMoriLogo} alt="Kaze No Mori Logo" title="Kaze No Mori" className="object-contain h-full w-full" />
+                  <img src={GeduiLogo} alt="Gedui Logo" title="Gedui" className="object-contain h-full w-full" />
                 </div>
                 {/* project print */}
                 <div className="flex justify-center items-center h-26-6667">
                 <motion.img
                     whileHover={{ scale: 1.1 }}          
-                    src={KazeNoMoriImg} alt="Kaze No Mori Site" title="Kaze No Mori Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                    src={GeduiImg} alt="Gedui Site" title="Gedui Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
                   />
                 </div>
                 {/* project description */}
                 <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
                   <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
-                  Bonsai website showcasing species details, care guides, and an API-powered product catalog with a clean, responsive design.
+                    Maintenance and development of innovative solutions for an educational platform with more than 100,000 users.
                   </p>
                 </div>
                 {/* div to horizontally align the stack div */}
                 <div className="grid justify-center items-center h-9">
                   {/* project stacks */}
                   <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
-                  <div className="w-5 h-5 flex justify-center items-center">
+                    {/* REACT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={ReactColor} alt="React Icon" title="React" />
+                    </div>
+                    {/* TypeScript Icon */}
+                    <div className="w-5 h-5 flex justify-center items-center">
                       <img src={TSColor} alt="TypeScript Icon" title="TypeScript" />
+                    </div>
+                    {/* Bootstrap ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={Bootstrap} alt="Bootstrap Icon" title="Bootstrap" />
                     </div>
                     {/* STYLED COMPONENTS ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
                       <img src={StyledComponentsColor} alt="Styled Components Icon" title="Styled Components" />
                     </div>
-                    {/* REACT ICON */}
-                    <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={ReactColor} alt="React Native Icon" title="React Native" />
-                    </div>
                     {/* NODE.JS ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
                       <img src={NodeJS} alt="NodeJS Icon" title="NodeJS" />
-                    </div>          
-                    
-                    
-                    
+                    </div>
+                    {/* POSTMAN ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={Postman} alt="Postman Icon" title="Postman" />
+                    </div>
+                    {/* FIGMA ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={Figma} alt="Figma Icon" title="Figma" />
+                    </div>
+                  </div>
+                </div>
+                {/* extern links (github and demo) */}
+                <div className="flex justify-center items-center gap-4  h-8-3333">
+                  <div className="justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 hidden">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center ">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                      </a>
+                      <p className="text-text-color-blue font-bold">Code</p>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project demonstration link  */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://gedui.com.br/en/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Demo</motion.p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* project Ironside Global Trading */}
+            <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
+              {/* card blue border */}
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
+                {/* project logo */}
+                <div className="flex justify-center items-center h-6-6667">
+                  <img src={IGTLogo} alt="Ironside Global Trading Logo" title="Ironside Global Trading" className="object-contain h-full w-full" />
+                </div>
+                {/* project print */}
+                <div className="flex justify-center items-center h-26-6667">
+                <motion.img
+                    whileHover={{ scale: 1.1 }}          
+                    src={IGTImg} alt="Ironside Global Trading Site" title="Ironside Global Trading Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                  />
+                </div>
+                {/* project description */}
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
+                  Development of a custom and responsive landing page for an international company specialized in foreign trade.
+                  </p>
+                </div>
+                {/* div to horizontally align the stack div */}
+                <div className="grid justify-center items-center h-9">
+                  {/* project stacks */}
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
+                    {/* WordPress ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={WordPress} alt="WordPress Icon" title="WordPress" />
+                    </div>
+                    {/* CSS ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={CSSColor} alt="CSS Icon" title="CSS" />
+                    </div>
+                    {/* ILUSTRATOR ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={Illustrator} alt="Ilustrator Icon" title="Ilustrator" />
+                    </div>
                   </div>
                 </div>
                 {/* extern links (github and demo) */}
@@ -146,27 +241,10 @@ const Projects = ({ setSelectedPage }: Props) => {
                     </div>
                   </div>
 
-                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2">
-                    {/* project github code link */}
-                    <div className="flex justify-center items-center">
-                      <a href="https://github.com/AdemirStefanski/Kaze_no_Mori" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                        <motion.div
-                          className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
-                          whileHover={{ scale: 1.1 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        />
-                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
-                          whileHover={{ scale: 1.1 }}
-                          transition={{ stiffness: 400, damping: 10 }}
-                        >Code</motion.p>
-                      </a>
-                    </div>
-                  </div>
-
                   <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
                     {/* project demonstration link  */}
                     <div className="flex justify-center items-center">
-                      <a href="https://kaze-no-mori.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                      <a href="https://www.ironsideglobal.com.br/" target="_blank" rel="noopener noreferrer" className="flex items-center">
                         <motion.div
                           className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
                           whileHover={{ scale: 1.1 }}
@@ -219,7 +297,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                     </div>
                     {/* REACT ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={ReactColor} alt="React Native Icon" title="React Native" />
+                      <img src={ReactColor} alt="React Icon" title="React" />
                     </div>
                     {/* REDUX ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
@@ -233,7 +311,6 @@ const Projects = ({ setSelectedPage }: Props) => {
                     <div className="w-5 h-5 flex justify-center items-center">
                       <img src={FirebaseColor} alt="Firebase Icon" title="Firebase" />
                     </div>
-                    
                   </div>
                 </div>
                 {/* extern links (github and demo) */}
@@ -256,6 +333,101 @@ const Projects = ({ setSelectedPage }: Props) => {
                     {/* project demonstration link  */}
                     <div className="flex justify-center items-center">
                       <a href="https://reformafacil.app/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Demo</motion.p>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            {/* project Kaze No Mori */}
+            <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
+              {/* card blue border */}
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
+                {/* project logo */}
+                <div className="flex justify-center items-center h-6-6667">
+                  <img src={KazeNoMoriLogo} alt="Kaze No Mori Logo" title="Kaze No Mori" className="object-contain h-full w-full" />
+                </div>
+                {/* project print */}
+                <div className="flex justify-center items-center h-26-6667">
+                <motion.img
+                    whileHover={{ scale: 1.1 }}          
+                    src={KazeNoMoriImg} alt="Kaze No Mori Site" title="Kaze No Mori Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                  />
+                </div>
+                {/* project description */}
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
+                  Bonsai website showcasing species details, care guides, and an API-powered product catalog with a clean, responsive design.
+                  </p>
+                </div>
+                {/* div to horizontally align the stack div */}
+                <div className="grid justify-center items-center h-9">
+                  {/* project stacks */}
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
+                  <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={TSColor} alt="TypeScript Icon" title="TypeScript" />
+                    </div>
+                    {/* STYLED COMPONENTS ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={StyledComponentsColor} alt="Styled Components Icon" title="Styled Components" />
+                    </div>
+                    {/* REACT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={ReactColor} alt="React Icon" title="React" />
+                    </div>
+                    {/* NODE.JS ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={NodeJS} alt="NodeJS Icon" title="NodeJS" />
+                    </div>          
+                  </div>
+                </div>
+                {/* extern links (github and demo) */}
+                <div className="flex justify-center items-center gap-4  h-8-3333">
+                  <div className="justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 hidden">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center ">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                      </a>
+                      <p className="text-text-color-blue font-bold">Code</p>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://github.com/AdemirStefanski/Kaze_no_Mori" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Code</motion.p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project demonstration link  */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://kaze-no-mori.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center">
                         <motion.div
                           className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
                           whileHover={{ scale: 1.1 }}
@@ -308,7 +480,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                     </div>
                     {/* REACT ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
-                      <img src={ReactColor} alt="React Native Icon" title="React Native" />
+                      <img src={ReactColor} alt="React Icon" title="React" />
                     </div>
                     {/* AXIOS ICON */}
                     <div className="w-5 h-5 flex justify-center items-center">
