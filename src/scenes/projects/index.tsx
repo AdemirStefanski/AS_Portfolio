@@ -108,7 +108,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                 <div className="flex justify-center items-center h-26-6667">
                 <motion.img
                     whileHover={{ scale: 1.1 }}          
-                    src={GeduiImg} alt="Gedui Site" title="Gedui Demo" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                    src={GeduiImg} alt="Gedui Site" title="Gedui" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
                   />
                 </div>
                 {/* project description */}
@@ -178,7 +178,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                         <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
                           whileHover={{ scale: 1.1 }}
                           transition={{ stiffness: 400, damping: 10 }}
-                        >Demo</motion.p>
+                        >Website</motion.p>
                       </a>
                     </div>
                   </div>
@@ -253,11 +253,10 @@ const Projects = ({ setSelectedPage }: Props) => {
                         <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
                           whileHover={{ scale: 1.1 }}
                           transition={{ stiffness: 400, damping: 10 }}
-                        >Demo</motion.p>
+                        >Website</motion.p>
                       </a>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -341,7 +340,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                         <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
                           whileHover={{ scale: 1.1 }}
                           transition={{ stiffness: 400, damping: 10 }}
-                        >Demo</motion.p>
+                        >Website</motion.p>
                       </a>
                     </div>
                   </div>
