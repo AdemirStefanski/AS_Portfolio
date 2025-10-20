@@ -32,6 +32,9 @@ import GeduiLogo from "@/assets/projects/logos/GeduiLogo.png";
 import IGTImg from "@/assets/projects/project_screens/siteIGT.jpg";
 import IGTLogo from "@/assets/projects/logos/IGTLogo.png";
 
+//PROJECT KAZE NO HYPECON PRINT/LOGO IMPORT
+import HypeconImg from "@/assets/projects/project_screens/siteHypeCon.jpg";
+import HypeconLogo from "@/assets/projects/logos/HypeconLogo.png";
 
 
 
@@ -54,6 +57,12 @@ import Postman from "@/assets/icons/color/postman.png";
 import Figma from "@/assets/icons/color/figma.png";
 import WordPress from "@/assets/icons/color/WordPress.png";
 import Illustrator from "@/assets/icons/color/illustrator.png";
+import GitHub from "@/assets/icons/color/github.png";
+import Next from "@/assets/icons/color/nextjs.png";
+import Tailwind from "@/assets/icons/color/tailwindcss.png";
+
+
+
 
 
 
@@ -95,6 +104,96 @@ const Projects = ({ setSelectedPage }: Props) => {
 
          
           <div className="h-full w-full max-w-[1400px] mx-auto flex flex-wrap justify-center items-center z-10 pt-4">
+
+            {/* project Hypecon */}
+            <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
+              {/* card blue border */}
+              <div className="w-300 h-550 rounded-lg border-4 border-my-colors-card-border p-3 flex flex-col gap-3 justify-between">
+                {/* project logo */}
+                <div className="flex justify-center items-center h-6-6667">
+                  <img src={HypeconLogo} alt="Gedui Logo" title="Gedui" className="object-contain h-full w-full" />
+                </div>
+                {/* project print */}
+                <div className="flex justify-center items-center h-26-6667">
+                <motion.img
+                    whileHover={{ scale: 1.1 }}          
+                    src={HypeconImg} alt="Gedui Site" title="Gedui" className="rounded-lg drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] " 
+                  />
+                </div>
+                {/* project description */}
+                <div className=" bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg h-29 flex justify-center items-center">
+                  <p className="text-center m-1 text-text-color-blue text-sm p-2 font-semibold">
+                    Development of a subscription platform for a gamer-focused MVNO, connecting mobile plans directly to in-game rewards and items.
+                  </p>
+                </div>
+                {/* div to horizontally align the stack div */}
+                <div className="grid justify-center items-center h-9">
+                  {/* project stacks */}
+                  <div className="flex bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-4 gap-4 w-min ">
+                    {/* REACT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={ReactColor} alt="React Icon" title="React" />
+                    </div>
+                    {/* JAVASCRIPT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={JSColor} alt="JavaScript Icon" title="JavaScript" />
+                    </div>
+                    {/* TypeScript Icon */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={TSColor} alt="TypeScript Icon" title="TypeScript" />
+                    </div>
+                    {/* GitHub Icon */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={GitHub} alt="GitHub Icon" title="GitHub" />
+                    </div>
+                    {/* NEXT ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={Next} alt="Next Icon" title="Next" />
+                    </div>
+                    {/* TAILWIND ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={Tailwind} alt="Tailwind Icon" title="Tailwind" />
+                    </div>
+                    {/* POSTMAN ICON */}
+                    <div className="w-5 h-5 flex justify-center items-center">
+                      <img src={Postman} alt="Postman Icon" title="Postman" />
+                    </div>
+                  </div>
+                </div>
+                {/* extern links (github and demo) */}
+                <div className="flex justify-center items-center gap-4  h-8-3333">
+                  <div className="justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 hidden">
+                    {/* project github code link */}
+                    <div className="flex justify-center items-center ">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <motion.div className="w-8 h-8 object-contain content-githubnocolor hover:content-githubcolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                      </a>
+                      <p className="text-text-color-blue font-bold">Code</p>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center items-center bg-white bg-opacity-65 backdrop-blur rounded-lg shadow-lg p-2 ">
+                    {/* project demonstration link  */}
+                    <div className="flex justify-center items-center">
+                      <a href="https://hypecon.gg/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <motion.div
+                          className="w-7 h-7 object-contain content-demonograythird hover:content-democolor pr-2"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        />
+                        <motion.p className="text-text-color-blue font-bold hover:text-my-colors-green-10"
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ stiffness: 400, damping: 10 }}
+                        >Website</motion.p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* project Gedui */}
             <div className=" w-350 h-600 bg-cardAbsBg flex items-center justify-center">
