@@ -38,6 +38,7 @@ const imageMap: { [key: string]: string } = {
   Certify12: Images[10],
   Certify13: Images[11],
   Certify14: Images[12],
+  Certify15: Images[13],
 };
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content  }) => {

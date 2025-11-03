@@ -164,7 +164,7 @@ const Certifications = ({ setSelectedPage }: Props) => {
     },
     {
       id: 11,
-      title: 'Front-end Immersion',
+      title: 'Front-end Bootcamp',
       duration: '5 hours',
       syllabus: [
         'Consolidation of knowledge in HTML, CSS, and JavaScript',
@@ -175,6 +175,21 @@ const Certifications = ({ setSelectedPage }: Props) => {
         'Participation in exclusive live sessions for professional guidance',
       ],
       imageUrl: 'Certify2',
+    },
+    {
+      id: 12,
+      title: 'Google AI Agents Dev Bootcamp',
+      duration: '4 hours',
+      syllabus: [
+        'Configuration of the Gemini 2.5 Pro model within the LangChain framework',
+        'Practical development of an AI classifier using system prompts and structured JSON outputs (Pydantic)',
+        'Building a RAG (Retrieval-Augmented Generation) knowledge base from PDF documents',
+        'Techniques for text processing, chunking, and creating embeddings with FAISS',
+        'Introduction to complex agent orchestration and state management using LangGraph',
+        'Implementation of conditional routing to manage multi-step agent workflows',
+        "Visualization and compilation of a complete agent's decision-making graph",
+      ],
+      imageUrl: 'Certify15',
     },
   ];
 

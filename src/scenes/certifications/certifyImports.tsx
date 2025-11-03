@@ -11,6 +11,8 @@ import Certify11 from "../../assets/certification/certify11.jpg";
 import Certify12 from "../../assets/certification/certify12.jpg";
 import Certify13 from "../../assets/certification/certify13.jpg";
 import Certify14 from "../../assets/certification/certify14.jpg";
+import Certify15 from "../../assets/certification/certify15.jpg";
+
 
 
 const Images = [
@@ -26,7 +28,8 @@ const Images = [
   Certify11,
   Certify12,
   Certify13,
-  Certify14
+  Certify14,
+  Certify15
 ];
 
 export default Images;
